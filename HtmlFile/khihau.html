@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khi Hau</title>
+    <link rel="stylesheet" href="/BootstrapFile/css_bootstrap.min.css">
+    <script src="/BootstrapFile/1_jquery_slim.min.js"></script>
+    <script src="/BootstrapFile/2_popper.min.js"></script>
+    <script src="/BootstrapFile/3_js_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/CssFile/khihau.css">
+    <script src="https://kit.fontawesome.com/1f090d64ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar navbar-containt">
+        <div class="navbar-brand" style="color: black;">
+            <a href="/HtmlFile/index1.html"><img
+                    src="https://asiasomeday.com/vietnam/wp-content/uploads/sites/8/2020/05/Vietnam_WEATHER.png"
+                    class="logo-header" alt="main-logo"></a>
+            <a href="/HtmlFile/index1.html" class="text-main-color" name="head">The Weather</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dự báo thời tiết
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/HtmlFile/nhietdo.html">Nhiệt độ</a>
+                        <a class="dropdown-item" href="/HtmlFile/luongmua.html">Lượng mưa</a>
+                        <a class="dropdown-item" href="/HtmlFile/gio.html">Gió</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/khihau.html">Khí hậu</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/tintucFirstPage.html">Tin tức</a>
+                </li>
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thông tin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Biểu đồ</a>
+                        <a class="dropdown-item" href="#">Số liệu</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 70%; margin-left: 10px;" type="search"
+                    placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 text-white  border-primary"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+    <!---------------------- Content-main ------------------------------->
+    <div class="container-fluid content-main">
+        <div class="row ml-2">
+            <!-- Left-side-bar -->
+            <div class="col-md-2">
+                <ul>
+                    <li class="list-style-head"><a href="/HtmlFile/khihau.html">Đầu trang</a></li>
+                    <li class="list-style-head"><a href="#hoan_luu_khi_quyen">Hoàn lưu khí quyển</a></li>
+                    <li class="list-style-head"><a href="#cac_mua" id="#cac_mua">Các mùa</a></li>
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample1"><i class="fa-solid fa-chevron-down"
+                                style="color: #005eff;"></i>Nhiệt độ</a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li class="list-style"><a href="#ki_luc_nhiet_do">Kỉ lục nhiệt độ</a></li>
+                                        <li class="list-style"><a href="#luong_mua">Lượng mưa</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample1"><i class="fa-solid fa-chevron-down"
+                                style="color: #005eff;"></i>Các miền khí
+                            hậu Việt Nam</a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li class="list-style"><a href="#khi_hau_phia_bac">Miền khí hậu phía Bắc</a>
+                                        </li>
+                                        <li class="list-style"><a href="#khi_hau_truong_son">Miền khí hậu Trường Sơn</a>
+                                        </li>
+                                        <li class="list-style"><a href="#khi_hau_phia_nam">Miền khí hậu phía Nam</a>
+                                        </li>
+                                        <li class="list-style"><a href="#khi_hau_bien_dong">Miền khí hậu Biển Đông</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li class="list-style-head"><a href="#">Biến đổi khí hậu</a></li>
+                </ul>
+            </div>
+
+
+
+            <!----------------------- Center-content ---------------->
+            <div class="center-content col-md-7">
+                <h4><a class="title-text" name="khi_hau_viet_nam" href="#head">Khí hậu Việt Nam</a></h4>
+                <hr>
+                <p class="centered-text">
+                    Tuy lãnh thổ Việt Nam nằm trọn trong vùng nhiệt đới nhưng khí hậu Việt Nam phân bố thành 3 vùng theo
+                    phân loại khí hậu Köppen với miền Bắc là khí hậu cận nhiệt đới ẩm. Miền Bắc gồm 2 mùa: mùa Hạ và mùa
+                    Đông. Miền Bắc Trung Bộ, Trung và Nam Trung bộ là khí hậu nhiệt đới gió mùa, miền cực Nam Trung Bộ
+                    và Nam Bộ mang đặc điểm cận xích đạo. Đồng thời, do nằm ở rìa phía Đông Nam của phần châu Á lục địa,
+                    giáp với Biển Đông (một phần của Thái Bình Dương), nên còn chịu ảnh hưởng trực tiếp của kiểu khí hậu
+                    gió mùa mậu dịch, thường thổi ở các vùng vĩ độ thấp. Miền Nam thường có 2 mùa: mùa mưa và mùa khô.
+                    Cần phân biệt vùng khí hậu ôn đới và nhiệt đới, vùng khí hậu ôn đới có 4 mùa là xuân, hạ, thu, đông
+                    còn vùng khí hậu nhiệt đới chỉ hai mùa là mùa nắng và mùa mưa. Ở Việt Nam, miền Bắc có 2 mùa (mùa
+                    xuân, thu ngắn là giai đoạn chuyển tiếp) nên nó không hoàn toàn trong vùng ôn đới, miền Nam 2 mùa
+                    nên hoàn toàn trong vùng nhiệt đới.
+                </p>
+                <h4><a class="title-text" name="hoan_luu_khi_quyen" href="#head">Hoàn lưu khí quyển</a></h4>
+                <hr>
+                <p class="centered-text">Hoàn lưu khí quyển ảnh hưởng đến Việt Nam là một phần của hoàn lưu gió mùa Đông
+                    Nam Á được đặc trưng
+                    bởi
+                    3 đặc điểm riêng biệt:</p>
+                <ol>
+                    <li class="text-li">Ngoài việc chịu ảnh hưởng của gió mùa Nam Á vào mùa hè, các vùng của Việt Nam
+                        còn chịu ảnh hưởng mạnh mẽ
+                        của gió mùa Đông Bắc, đặc biệt là vào mùa đông.</li>
+                    <li class="text-li">Ngoài việc chịu ảnh hưởng của các hoàn lưu nhiệt đới, cận nhiệt đới và ôn đới từ
+                        Bắc bán cầu, các hoàn
+                        lưu khí quyển ảnh hưởng đến Việt Nam còn gắn liền với các hoàn lưu cận nhiệt đới và nhiệt đới từ
+                        Nam bán
+                        cầu.</li>
+                    <li class="text-li">Khí hậu Việt Nam chịu ảnh hưởng mạnh mẽ của vị trí giáp biển trong tất cả các
+                        mùa.</li>
+                </ol>
+                <p class="centered-text">Hai áp suất khí quyển thường trực ảnh hưởng đến hoàn lưu khí quyển Việt Nam là
+                    áp thấp xích đạo và áp
+                    cao cận nhiệt đới. Các trung tâm khí áp theo mùa ảnh hưởng đến Việt Nam bao gồm áp cao lục địa châu
+                    Á, vùng áp thấp Aleutia, trung tâm áp thấp lục địa Nam Á và trung tâm áp cao lục địa đại dương. Trên
+                    khắp Đông Á, frông vùng cực di chuyển về phía nam vào mùa đông, đạt tới 8°B vào tháng Giêng là giới
+                    hạn
+                    phía Nam trong khi giới hạn phía Bắc của nó là 25–27°B vào tháng Bảy. Do toàn bộ Việt Nam nằm giữa
+                    giới hạn phía nam và phía bắc của mặt cực nên khí hậu Việt Nam đều chịu ảnh hưởng của không khí vùng
+                    cực
+                    và không khí nhiệt đới (từ đới hội tụ nhiệt đới). Ở Việt Nam, hoàn lưu gió mùa là tổng hòa của cả
+                    hai
+                    hệ thống gió mùa Nam Á và Đông Bắc Á. Điều này dẫn đến bốn mùa rõ rệt, trong đó mùa đông (tháng 11 -
+                    tháng 3) và mùa hè (tháng 5 - tháng 9) là chính trong khi mùa xuân (tháng 4) và mùa thu (tháng 10)
+                    là
+                    mùa chuyển tiếp.</p>
+
+                <h4 class="title-text"><a name="cac_mua" href="#head">Các mùa</a></h4>
+                <hr>
+                <p class="centered-text">Mùa đông thường kéo dài từ tháng mười một cho đến tháng ba. Trong suốt mùa
+                    đông, không khí vùng
+                    cực bắt nguồn từ Cao nguyên Xibia xâm nhập sâu vào các vĩ độ thấp, tạo điều kiện cho Cao nguyên phía
+                    đông Tây Tạng thổi luồng không khí xuống phía nam theo hướng đông bắc (không khí mát là gió đến từ
+                    đông bắc). Đồng thời, một hệ thống áp suất thấp trên khắp nước Úc mạnh lên tạo ra một dải áp suất
+                    làm tăng cường các đợt gió đông bắc lạnh giá. Nhiều đợt rét có thể xâm nhập vào Việt Nam trong
+                    suốt mùa đông, trong đó có 3-4 đợt xuất hiện hàng tháng ở miền Bắc. Điều này dẫn đến nhiệt độ
+                    lạnh, nơi nhiệt độ giảm từ 4 đến 5°C (7 đến 9°F). Thời tiết lạnh, đôi khi cực lạnh có thể tồn tại
+                    trong một thời gian dài, được đặc trưng bởi một khoảng thời gian dài những ngày không có mây hoặc
+                    một phần mây vào nửa đầu mùa đông hoặc một thời gian dài có mây và mưa phùn vào nửa sau của mùa
+                    đông. Điểm nổi bật nhất là mùa đông ở miền Bắc có nền nhiệt độ trung bình thấp hơn các khu vực
+                    khác cùng vĩ độ trên thế giới là do ảnh hưởng của yếu tố địa hình với bốn cánh cung núi là Sông Gâm,
+                    Ngân Sơn, Bắc Sơn và Đông Triều như một nan quạt xòe rộng về hướng Đông Bắc làm hút mạnh gió mùa mùa
+                    đông. Thời tiết lạnh xảy ra ở miền Bắc thường xuyên hơn ở miền Nam do các mặt trận lạnh xâm nhập vào
+                    miền Bắc thường xuyên hơn.</p>
+
+                <p class="centered-text">Mùa mưa bắt đầu từ cuối tháng 4 / đầu tháng 5 và kéo dài đến tháng 10. Vào mùa
+                    hè, hình thái gió
+                    chung là gió Tây Nam ở các vùng phía Nam của Việt Nam và gió Đông Nam ở phía Bắc. Các khối khí
+                    chủ yếu ở Việt Nam là khối xích đạo và khối nhiệt đới bắt nguồn từ hệ thống áp cao ở Nam bán cầu, và
+                    khối nhiệt đới biển bắt nguồn từ hệ thống áp cao cận nhiệt đới ở Thái Bình Dương (áp cao cận nhiệt
+                    đới Thái Bình Dương). Ngoài ra, trong mùa hè, Việt Nam chịu ảnh hưởng của không khí nhiệt đới từ
+                    Vịnh Bengal xuất hiện khi một áp thấp lục địa xuất phát từ Nam Á (áp thấp lục địa Nam Á) di chuyển
+                    theo hướng Đông về phía Việt Nam, bao trùm hầu hết Việt Nam và nam Trung Quốc; Điều này gây ra thời
+                    tiết khô, nóng ở Bắc Trung Bộ do gió Tây thổi xuống và ấm áp trên sườn đông của dãy Trường Sơn.
+                    Trung bình có 11 cơn bão và áp thấp nhiệt đới phát triển trên Biển Đông trong suốt mùa hè, trong đó
+                    một nửa là xoáy thuận nhiệt đới bắt nguồn từ Tây Thái Bình Dương. Sau đó các cơn bão và xoáy
+                    thuận này di chuyển theo hướng Tây về phía Việt Nam. Trung bình, Việt Nam chịu ảnh hưởng của 6-8
+                    cơn bão hoặc xoáy thuận nhiệt đới mỗi năm.</p>
+                <p class="centered-text">Mùa Xuân và mùa Thu là mùa chuyển tiếp. Hoàn lưu khí quyển trong những mùa này
+                    thể hiện sự chuyển
+                    tiếp giữa mùa đông - mùa hè & mùa hè -mùa đông tương ứng.</p>
+                <p>Nhìn chung, miền Bắc đất nước có bốn mùa đông, xuân, hạ, thu. Ở miền Nam chỉ có hai mùa: mùa khô
+                    và mùa ẩm.</p>
+
+                <h4 class="title-text"><a name="nhietdo" href="#head">Nhiệt độ</a></h4>
+                <hr>
+                <p class="centered-text">Nhiệt độ trung bình hàng năm trong cả nước, dựa trên dữ liệu khí tượng từ các
+                    trạm thời tiết nằm
+                    trong
+                    khoảng từ 12,8 đến 27,7°C (55 đến 82°F) ở Hoàng Liên Sơn. Ở độ cao lớn nhất trong dãy Hoàng Liên
+                    Sơn, nhiệt độ trung bình hàng năm chỉ là 8°C (46°F) Khi nhiệt độ thay đổi theo độ cao, nhiệt độ giảm
+                    0,5°C (1°F) cho mỗi lần tăng độ cao 100 mét (328 ft). Nhiệt độ trung bình hàng năm thấp nhất được
+                    tìm
+                    thấy ở các khu vực miền núi, nơi có cao hơn và ở các khu vực phía bắc, do vĩ độ cao hơn của chúng.
+                    Do
+                    chịu ảnh hưởng mạnh mẽ của gió mùa nên nhiệt độ trung bình của Việt Nam thấp hơn so với các nước
+                    cùng vĩ
+                    độ ở Châu Á.</p>
+
+                <p class="centered-text">Vào mùa đông, nhiệt độ trung bình nằm trong khoảng từ 2 đến 26°C (36 đến 79°F),
+                    giảm dần từ nam lên
+                    bắc
+                    và/hoặc khi một người leo lên núi và ngược lại. Trong tháng mát mẻ nhất, nhiệt độ trung bình dao
+                    động
+                    từ 10 đến 16°C (50 đến 61°F) ở vùng cao phía bắc đến 20 đến 24°C (68 đến 75°F) ở vùng cao phía nam.
+                    Nói chung, nhiệt độ mùa đông trung bình là dưới 20°C (68°F) ở nhiều địa điểm phía bắc. Ngoài việc
+                    giảm nhiệt độ vào mùa đông, Gió mùa Đông Bắc góp phần làm cho điều kiện lạnh hơn. Nhiều vùng núi ở
+                    phía bắc đã trải qua điều kiện cận nhiệt. Ngược lại, nhiệt độ ở quần đảo Trường Sa không bao giờ
+                    xuống dưới 21°C (70°F). Vào mùa hè, nhiệt độ trung bình dao động trong khoảng 25 đến 30°C (77 đến
+                    86°F) Nhiệt độ cao nhất thường xảy ra vào tháng 3 - tháng 5 ở miền nam và tháng 5 - tháng 7 ở miền
+                    bắc. Điều này là do ở miền Bắc, mưa phùn chiếm ưu thế dẫn đến nhiệt độ tăng nhẹ vào tháng 2 và tháng
+                    3 trước khi tăng từ tháng 4 đến tháng 8 trong khi ở miền Nam, mức tăng nhiệt độ (từ tháng 12 - tháng
+                    2 /
+                    tháng 3) lớn hơn nhiều. Do đó, phía nam đạt nhiệt độ cao nhất vào cuối mùa đông trong khi ở phía
+                    bắc,
+                    nhiệt độ xảy ra vào tháng 7 và tháng 8 do điều này. Nhiệt độ vào mùa hè tương đối bằng nhau giữa các
+                    vùng phía bắc và phía nam của đất nước với sự khác biệt chủ yếu là do độ cao (sự giảm nhiệt độ chủ
+                    yếu
+                    là do độ cao). </p>
+                <h5 class="title-text"><a name="ki_luc_nhiet_do" href="#head">Kĩ lục nhiệt độ</a></h5>
+                <hr>
+                <img src="/Images/KhiHauImages/1.png" class="w-100">
+                <p class="mt-3 centered-text">Nhiệt độ cao nhất từng được ghi nhận ở Việt Nam là 44,2•C, được ghi nhận
+                    tại huyện Tương
+                    Dương, tỉnh
+                    Nghệ An vào ngày 7 tháng 5 năm 2023.</p>
+                <p class="centered-text">Nhiệt độ lạnh nhất được ghi nhận ở Việt Nam là −6,1 °C (21,0 °F) tại Sa Pa vào
+                    ngày 4 tháng 1 năm
+                    1974.
+                    Mức thấp kỷ lục -6,0 °C (21,2 °F) cũng được ghi nhận tại Hoàng Liên vào ngày 1 tháng 1 năm 1974 và
+                    ngày
+                    6 tháng 1 năm 1974. Đối với nhiệt độ mặt đất, nhiệt độ mặt đất thấp nhất từng được ghi nhận là −6,4
+                    °C
+                    (20,5 °F) tại Sa Pa vào ngày 31 tháng 12 năm 1975 trong khi nhiệt độ cao nhất là 74,7 °C (166,5 °F)
+                    tại
+                    Buôn Ma Buông vào ngày 23 tháng 5 năm 1982. Nhiệt độ mặt đất thấp kỷ lục tuyệt đối có xu hướng thấp
+                    hơn
+                    từ 1 đến 2 °C (2 đến 4 °F) so với nhiệt độ không khí thấp kỷ lục nhưng nhiệt độ mặt đất cao kỷ lục
+                    tuyệt
+                    đối có xu hướng trên 30 °C (54 °F) cao hơn nhiệt độ không khí.</p>
+                <p class="centered-text"> Áp suất không khí cao nhất từng được ghi nhận ở Việt Nam là tại trạm khí tượng
+                    Láng vào ngày 18
+                    tháng 11
+                    năm 1996 khi đo được 1.035,9 hPa (30,59 inHg). Áp suất không khí thấp nhất từng được ghi nhận là tại
+                    Sa
+                    Pa vào ngày 24 tháng 7 năm 1971 với chỉ số là 827,0 hPa (24,42 inHg). </p>
+                <p class="centered-text">Sức gió cao nhất được ghi nhận ở Việt Nam là 59 m/s (190 ft/s) tại Quy Nhơn vào
+                    tháng 9 năm 1972 mặc
+                    dù
+                    vận tốc gió trên 40 m/s (130 ft/s) đã được ghi nhận ở đồng bằng Bắc Bộ (đồng bằng sông Hồng), và
+                    vùng
+                    ven biển tỉnh Quảng Ninh.</p>
+
+                <h5 class="title-text"><a name="luong_mua" href="#head">Lượng mưa</a></h5>
+
+                <hr>
+                <p class="centered-text">Lượng mưa trung bình hàng năm trong cả nước dao động từ 700 đến 5.000 mm (28
+                    đến 197 in) mặc dù hầu
+                    hết
+                    các nơi ở Việt Nam nhận được từ 1.400 đến 2.400 mm (55 đến 94 in). Phần lớn lượng mưa xảy ra
+                    trong
+                    mùa mưa, chiếm 80% –90% lượng mưa hàng năm. Nhìn chung, các vùng phía bắc của đất nước nhận được
+                    nhiều mưa hơn các vùng phía nam của đất nước. Các đảo nằm ở phía bắc nói chung nhận được lượng
+                    mưa ít
+                    hơn so với đất liền liền kề trong khi ở phía nam, điều này ngược lại khi các đảo như Phú Quốc nhận
+                    được
+                    nhiều mưa hơn so với đất liền liền kề. Số ngày mưa trung bình hàng năm từ 60 đến 200 ngày, trong
+                    đó
+                    hầu hết các ngày có lượng mưa trung bình dưới 5 mm (0,20 in). Lượng ngày mưa trong tháng thường
+                    tương
+                    ứng với lượng mưa trung bình tháng mặc dù ở Bắc Bộ và Bắc Trung Bộ, mùa đông thường có mưa phùn (mặc
+                    dù
+                    là mùa khô hơn), dẫn đến lượng ngày mưa nhiều hơn. Ví dụ, số ngày mưa vào mùa khô hơn trong mùa
+                    đông
+                    ở tỉnh Yên Bái do mưa phùn nhiều hơn số ngày mưa trong mùa mưa chính. Mưa phùn là hiện tượng thời
+                    tiết đặc trưng cho thời tiết mùa đông ở bắc bộ và bắc trung bộ. Số ngày có dông xảy ra 20–80 ngày
+                    mỗi
+                    năm, phổ biến ở phía Nam và phía Bắc, vùng núi nhiều hơn vùng đồng bằng ven biển. Giông có thể
+                    xảy ra
+                    quanh năm mặc dù chúng phổ biến nhất vào mùa mưa. Ở các đỉnh núi cao nhất phía Bắc như Sa Pa,
+                    Tam
+                    Đảo, Hoàng Liên Sơn có thể xảy ra tuyết rơi.</p>
+                <p class="centered-text">Tùy thuộc vào khu vực, thời điểm bắt đầu mùa mưa (được định nghĩa là khi lượng
+                    mưa trung bình hàng
+                    tháng
+                    vượt quá 100 mm (3,9 in)) khác nhau: Ở Tây Bắc và Đông Bắc, mùa mưa thường bắt đầu từ tháng 4 -
+                    tháng 5
+                    với đỉnh điểm vào tháng 7 - tháng 8 và kết thúc vào tháng 9 và tháng 10. Ở đồng bằng sông Hồng
+                    (đồng
+                    bằng Bắc Bộ), mùa mưa bắt đầu từ tháng 4-5, cao điểm vào tháng 7-8 và kết thúc vào tháng 10. Ở
+                    Bắc
+                    Trung Bộ, mùa mưa thường bắt đầu từ tháng 5 - tháng 8 (ở phần phía bắc đèo Ngang mùa mưa bắt đầu từ
+                    tháng 5 - 6, phần phía Nam đèo Ngang mùa mưa đến muộn hơn vào khoảng tháng 8, đạt cực đại vào tháng
+                    10
+                    và tháng 11 trước khi kết thúc vào tháng 11 và tháng 12. Đối với vùng duyên hải Nam Trung Bộ, mùa
+                    mưa
+                    bắt đầu vào tháng 8 và tháng 9, đạt cực đại vào tháng 10 và tháng 11 trước khi kết thúc vào tháng
+                    12.
+                    Ở Tây Nguyên, mùa mưa bắt đầu vào tháng 4 và tháng 5, đạt đỉnh vào tháng 8 trước khi kết thúc vào
+                    tháng
+                    10 và tháng 11. Cuối cùng, miền Nam có mùa mưa bắt đầu từ tháng 5, đạt đỉnh vào tháng 9 trước khi
+                    kết
+                    thúc vào tháng 11.</p>
+
+
+
+                <h4 class="title-text"><a name="cac_mien_khi_hau" href="#head">Các miền khí hậu Việt Nam</a></h4>
+
+                <p class="centered-text">Việt Nam có bốn miền khí hậu chủ yếu, bao gồm: miền khí hậu phía Bắc, miền khí
+                    hậu phía Nam, miền khí
+                    hậu Trường Sơn, và miền khí hậu Biển Đông.</p>
+                <h5 class="title-text"><a name="khi_hau_phia_bac" href="#head">Miền khí hậu phía Bắc</a></h5>
+                <p class="centered-text">Bao gồm phần lãnh thổ phía Bắc (tả ngạn) sông Lam. Miền này có khí hậu cận
+                    nhiệt đới ẩm. Tuy nhiên,
+                    miền
+                    khí hậu này có đặc điểm là mất ổn định vời thời gian bắt đầu-kết thúc các mùa và về nhiệt độ.</p>
+                <ul class="text-li">
+                    <li class="centered-text">Vùng Đông Bắc bao gồm châu thổ Bắc Bộ và vùng đồi núi tả ngạn sông Hồng.
+                        Vùng này có đặc điểm
+                        địa hình
+                        phổ biến là đồi núi thấp dưới 1000 m. Các dãy núi hình cánh cung vòng hướng Đông Bắc chụm lại
+                        hướng về
+                        phía dãy núi Tam Đảo (đó là cánh cung Đông Triều, Bắc Sơn, Ngân Sơn, Sông Gâm không ngăn cản mà
+                        lại tạo
+                        thành các sườn dẫn gió mùa Đông Bắc và gió Bắc thường thổi về mùa đông. Vùng này tiếp giáp với
+                        vịnh Bắc
+                        Bộ về phía Đông, phía Tây được chắn bởi dãy Hoàng Liên Sơn cao nhất Việt Nam, nên chịu ảnh hưởng
+                        của khí
+                        hậu gió mùa ẩm nhiều hơn vùng Tây Bắc. Vì vậy mà vùng Đông Bắc chịu ảnh hưởng trực tiếp của bão
+                        nhiệt
+                        đới, về mùa hè, ít chịu ảnh hưởng của gió Lào (gió foehn).</li>
+                    <li class="centered-text">Vùng Tây Bắc Bắc Bộ bao gồm vùng núi từ hữu ngạn sông Hồng đến tả ngạn
+                        sông Lam. Dãy núi cao
+                        Hoàng Liên
+                        Sơn chạy dài liền một khối theo hướng Tây Bắc - Đông Nam đóng vai trò của một bức trường thành
+                        ngăn làm
+                        cho gió mùa Đông Bắc lạnh giá khi đến đây bị suy yếu. Vì vậy, nền khí hậu Tây Bắc nói chung ấm
+                        hơn Đông
+                        Bắc, chênh lệch có thể đến 2-3 °C nếu so cùng độ cao. Ở miền núi, hướng và vị trí của một khu
+                        vực trong
+                        dãy núi đóng một vai trò quan trọng trong chế độ nhiệt – ẩm, sườn đón gió (sườn đông) tiếp nhận
+                        những
+                        lượng mưa lớn trong khi sườn tây tạo điều kiện cho gió "phơn" (hay quen được gọi là "gió lào")
+                        được hình
+                        thành khi thổi xuống các thung lũng. Nhìn chung, trong điều kiện của trung du và miền núi, việc
+                        nghiên
+                        cứu khí hậu là rất quan trọng vì sự biến dạng của khí hậu xảy ra trên từng khu vực nhỏ. Những
+                        biến cố
+                        khí hậu ở miền núi mang tính chất cực đoan, nhất là trong điều kiện lớp phủ rừng bị suy giảm, và
+                        lớp phủ
+                        thổ nhưỡng bị thoái hoá. Mưa lớn và tập trung gây ra lũ nhưng kết hợp với một số điều kiện thì
+                        xuất hiện
+                        lũ quét; hạn vào mùa khô thường xảy ra nhưng có khi hạn hán kéo dài ngoài sức chịu đựng của cây
+                        cối.</li>
+                </ul>
+
+                <h5 class="title-text"><a name="khi_hau_truong_son" href="#head">Miền khí hậu Trường Sơn</a></h5>
+                <p class="centered-text">Gồm phần lãnh thổ phía Đông dãy Trường Sơn, kéo dài từ phía Nam (hữu ngạn) sông
+                    Lam tới Mũi Dinh.
+                    Miền
+                    này mang đậm tính chất của khí hậu nhiệt đới gió mùa. Miền này lại có thể chia làm hai vùng:</p>
+                <ul class="text-li">
+                    <li class="centered-text">Vùng Bắc đèo Hải Vân có mùa đông ít hơn miền khí hậu phía Bắc và mùa hè
+                        chịu ảnh hưởng mạnh mẽ
+                        của gió
+                        Lào (gió Tây khô nóng). Về mùa đông, do hình thế vùng này chạy dọc bờ Biển Đông theo hướng Tây
+                        Bắc -
+                        Đông Nam, đón trực diện với hướng gió mùa chủ đạo thổi trong mùa này là gió mùa Đông Bắc. Lại bị
+                        hệ dãy
+                        núi Trường Sơn tương đối cao ở phía Tây và phía Nam (tại đèo Hải Vân trên dãy Bạch Mã) chắn ở
+                        cuối hướng
+                        gió mùa Đông Bắc. Nên vì vậy vùng này vẫn bị ảnh hưởng bởi thời tiết lạnh do gió mùa Đông Bắc
+                        mang đến
+                        và thường kèm theo mưa nhiều (khu vực có mưa nhiều do gió mùa đông bắc là từ Hà Tĩnh đến Thừa
+                        Thiên Huế)
+                        do gió mùa thổi theo đúng hướng Đông Bắc mang theo hơi nước từ biển vào, hơi khác biệt với thời
+                        tiết khô
+                        hanh của miền Bắc cùng trong mùa đông. Gió mùa Đông Bắc thổi đến đây thường bị suy yếu và bị
+                        chặn lại
+                        bởi dãy Bạch Mã ít ảnh hưởng tới các vùng phía Nam. Về mùa Hè, khi gió mùa Tây Nam hoạt động
+                        mạnh thổi
+                        từ vịnh Bengal qua vùng lục địa rộng lớn đến dãy Trường Sơn thì bị trút hết mưa xuống sườn Tây
+                        Trường
+                        Sơn nhưng vẫn tiếp tục vượt qua dãy núi để thổi sang vùng này. Lúc này do không còn hơi nước nên
+                        gió mùa
+                        Tây Nam gây ra thời tiết khô nóng (có khi tới > 40 °C, độ ẩm chỉ còn 50 ÷ 60), gió này gọi là
+                        gió foehn.</li>
+                    <li class="centered-text"> Vùng Duyên hải Nam Trung Bộ từ Đà Nẵng tới Ninh Thuận là vùng đồng bằng
+                        ven biển Nam Trung Bộ
+                        phía Nam
+                        đèo Hải Vân tương tự như phía bắc đèo Hải vân, tuy nhiên nhiệt độ có cao hơn và thỉnh thoảng có
+                        những
+                        đợt lạnh mùa đông tuy không dài, ảnh hưởng của gió Tây khô nóng không lớn như ở Bắc Trung Bộ, có
+                        mùa khô
+                        sâu sắc hơn. Riêng về mùa mưa khu vực từ Đà Nẵng đến Quảng Ngãi có tính chất giống khu vực Bắc
+                        Trung Bộ.
+                        Bắt đầu từ nam Khánh Hòa, Ninh Thuận, Bình Thuận lượng mưa rất thấp phổ biến chỉ đạt 700 -
+                        1300mm.
+                        Một đặc điểm quan trọng của miền khí hậu này là mùa mưa và mùa khô không cùng lúc với mùa mưa và
+                        khô của
+                        hai miến khí hậu còn lại. Mùa hè, trong khi cả nước có lượng mưa lớn nhất, thì miền khí hậu này
+                        lại đang
+                        ở thời kỳ khô nhất.</li>
+                </ul>
+
+
+
+                <h5 class="title-text"><a name="khi_hau_phia_nam" href="#head">Miền khí hậu phía Nam</a></h5>
+                <p class="centered-text">Gồm phần lãnh thổ thuộc Tây Nguyên và Nam Bộ. Miền này có khí hậu cận xích đạo
+                    với hai mùa: mùa khô
+                    và
+                    mùa mưa (từ tháng 4-5 đến tháng 10-11). Quanh năm, nhiệt độ của miền này cao, biên nhiệt độ nhỏ hơn
+                    đáng
+                    kể so với khu vực Bắc Bạch Mã. Nơi đây có một mùa khô kéo dài, đặc biệt sâu sắc. Khí hậu miền này ít
+                    biến động nhiều trong năm.</p>
+                <ul class="text-li">
+                    <li>Vùng duyên hải cực Nam Trung Bộ (Bình Thuận)</li>
+                    <li>Vùng cao nguyên Nam Trung Bộ (Tây Nguyên)</li>
+                    <li>Vùng đồng bằng Nam Bộ</li>
+                </ul>
+
+                <h5 class="title-text"><a name="khi_hau_bien_dong" href="#head">Miền khí hậu Biển Đông</a></h5>
+
+                <p class="centered-text"> Biển Đông Việt Nam mang đặc tính nhiệt đới mùa hải dương và tương đối đồng
+                    nhất. Tại đây thường
+                    xuyên có xoáy lốc đi từ Thái Bình Dương vào, tạo thành các cơn bão lớn. Do ở Bắc Bán cầu, nên bão và
+                    áp thấp nhiệt đới vào Việt Nam xoáy ngược chiều kim đồng hồ.
+                </p>
+
+            </div>
+
+            <!-------------------- Quảng cáo -------------------->
+            <div class="view-more-content col-md-3">
+                <iframe class="w-100 h-100 mt-5"
+                    src="https://obin.distinctrobin.com/adt/cpc/tvcads/2023/08/1160x250talent_300_600_16909671528383.html?url=%2F%2Fdistinctrobin.com%2Fatvc%3Fp%3D1318513%253B604000%253B33852%253B-1%253B-1%253B9%253B0%253B0%253Bsoha.vn%26path%3D%252Fhau-qua-chua-tung-co-cua-bien-doi-khi-hau-khap-the-gioi-20210812093152877.htm%26cov%3D1%26lsn%3D1691766045240%26ce%3D1%26lc%3D%26cr%3D%26ui%3D%26uuid%3D%26profileID%3D%26sspz%3D2102%26sspr%3D%26ctr%3D%26rid%3D067de241-2437-4c48-a89e-abf68c338ec4120-64d64d1e%26re%3Dhttps%253A%252F%252Favn.innity.com%252Fclick%252F%253Fadid%253D337108%2526zoneid%253D0%2526cb%253D52565%2526url%253Dhttps%25253A%25252F%25252Ficheck.vn%25252Fsan-pham%25252Fthuc-pham-bo-sung-nuoc-tang-luc-red-bull-voi-vitamin-va-kem-8850228007617%25253Futm_source%25253DRedbull%252526utm_medium%25253DAPX%252526utm_campaign%25253DRedbull%25252520Thai&amp;vast=https%3A%2F%2Fsspapi.admicro.vn%2Fssp_request%2Fvideo%3Fu%3Dsoha.vn%252Fhau-qua-chua-tung-co-cua-bien-doi-khi-hau-khap-the-gioi-20210812093152877.htm%26z%3D33852%26p%3D1%26w%3D650%26h%3D300%26%26lsn%3D1691766045240%26dgid%3D5b8ba0f42824f5ab11c378ddf0ac588d%26l%3D5%26loc%3D5%26i%3D3017660451934205671%26isdetail%3D1%26pid%3D%26tags%3D5%26adstype%3D%26vtype%3D8%26vid%3D%26bannerid%3D604000&amp;admid=titahotIframe_33852_2102_604000&amp;autoplay=0&amp;temp=30&amp;loc=5&amp;weath=2"
+                    frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer-Content -->
+    <div class="container-fluid footer-content">
+        <div class="row mb-5">
+            <div class="col-md-6 col-sm-12 mt-5 logo-color">
+                <div style="display: flex;">
+                    <img src="/Images/Logo_Footer/R.png" class="w-25" style="object-fit: contain;"
+                        alt="Đại học Nguyễn Tất Thành">
+                    <div class="text-left mt-5">
+                        <h3 class="font-weight-bold">NGUYEN TAT THANH</h3>
+                        <h3>UNIVERSITY</h3>
+                        <hr style="border: 2px solid #09057d;" class="w-75">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12" style="margin-top: 90px;">
+                <h5>THÔNG TIN SINH VIÊN</h5>
+                <p class="mt-4">Họ và tên: Võ Phi Hùng</p>
+                <p>Mã số: 2100009273</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

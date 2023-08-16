@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: #fafafa;
+}
+
+:root {
+    --main-color: rgb(29, 93, 155);
+    --text-w-color: #f8f8f8;
+    --bg-grey-color: #F1F0E8;
+    --hover-color: #DFCCFB;
+}
+
+.bg-navbar {
+    background-color: var(--main-color);
+}
+
+.logo-header {
+    width: 40px;
+}
+
+
+.text-main-color {
+    margin: 3px 0 0 10px;
+    color: #fff;
+}
+
+.text-main-color:hover {
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
+.dropdown-menu {
+    margin-top: 11px;
+    background-color: var(--bg-grey-color);
+    border: none;
+}
+
+
+.dropdown-menu {
+    background: none;
+    margin-top: -10px;
+    color: white;
+}
+
+.dropdown-menu a {
+    color: #fff;
+}
+
+
+
+.img-item {
+    height: 700px;
+    object-fit: cover;
+}
+
+.navbar-containt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+/* ----------------Main-content -------------------*/
+.main-content {
+    margin-top: 80px;
+}
+
+.main-text {
+    font-weight: 600;
+}
+
+.centered-text {
+    text-align: justify;
+}
+
+.centered-text p {
+    display: inline-block;
+}
+
+
+
+
+/* ---------------Left-side-bar --------------*/
+.left-side-bar {
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.first-box {
+    width: 100%;
+    height: 300px;
+}
+
+.first-box #header {
+    background: blue;
+    color: #fff;
+    text-align: center;
+}
+
+.new-letter {
+    background-color: red;
+    color: #fff;
+    font-size: smaller;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.text-content {
+    color: #000;
+}
+
+.second-box {
+    margin-top: 50px;
+}
+
+
+/*----------- Footer ----------*/
+.footer-content {
+    display: flex;
+    position: relative;
+    background-color: var(--main-color);
+    color: var(--text-w-color);
+    text-align: center;
+    justify-content: center;
+}
+
+.logo-color {
+    color: var(--logo-color);
+}
