@@ -87,7 +87,9 @@ body {
     display: inline-block;
 }
 
-
+.left-side-bar {
+    margin-bottom: 100px;
+}
 
 
 /* ---------------Left-side-bar --------------*/
