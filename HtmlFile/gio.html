@@ -9,8 +9,8 @@
     <script src="/BootstrapFile/1_jquery_slim.min.js"></script>
     <script src="/BootstrapFile/2_popper.min.js"></script>
     <script src="/BootstrapFile/3_js_bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/CssFile/muagio.css">
-    <script src="https://kit.fontawesome.com/1f090d64ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CssFile/gio.css">
+    <script src="/SourceJs/Font/kit.fontawesome.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/HtmlFile/nhietdo.html">Nhiệt độ</a>
                         <a class="dropdown-item" href="/HtmlFile/luongmua.html">Lượng mưa</a>
-                        <a class="dropdown-item" href="/HtmlFile/muagio.html">Mưa gió</a>
+                        <a class="dropdown-item" href="/HtmlFile/gio.html">Gió</a>
                     </div>
                 </li>
                 <li class="nav-item ml-3">
@@ -199,6 +199,53 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!------ Comment part ------------>
+                <div class="container-fluid mt-5">
+                    <div class="col-md-12 bg-info ">
+                        <h4>Bình luận (2)</h4>
+                    </div>
+                    <div class="user-comment col-md-12 mt-4 position-relative">
+                        <div class="icon-user">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="content-comment ml-4">
+                            <h5>Lê Thị Hiền</h5>
+                            <p style="color: grey;"><span style="color: red;"># </span>7, tháng 7,2023</p>
+                            <p style="margin-top: -10px;">Bài viết rất hay :v</p>
+                        </div>
+                        <div class="respon-comment position-absolute">
+                            <span style="color: red;">Trả lời</span>
+                            <i class="fa-solid fa-down-long" style="color: #ff0000;"></i>
+                        </div>
+                    </div>
+                    <hr class="col-md-12" style="width: 65%;">
+                    <div class="user-comment col-md-12 mt-4 ml-5 position-relative">
+                        <div class="icon-user">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="content-comment ml-2">
+                            <h5>Phương Anh</h5>
+                            <p style="color: grey;"><span style="color: red;"># </span>7, tháng 7,2023</p>
+                            <p style="margin-top: -10px;">Đúng rùi :))</p>
+                        </div>
+                        <div class="respon-comment position-absolute mr-5">
+                            <span style="color: red;">Trả lời</span>
+                            <i class="fa-solid fa-down-long" style="color: #ff0000;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <form class="post-comment position-relative">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><span class="text-bold">Bình luận của bạn</span></label>
+                            <input type="text" style="height: 100px; width: 100%;" class="form-control"
+                                id="formGroupExampleInput" placeholder="Nội dung bình luận (*)">
+                            <button class=" mt-4 bg-info send-button w-100"><span>Gửi bình luận</span></button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
 
@@ -237,7 +284,7 @@
     <!-- Footer-Content -->
     <div class="container-fluid footer-content">
         <div class="row mb-5">
-            <div class="col-md-6 col-sm-12 mt-5 logo-color">
+            <div class="col-md-6 col-sm-12 mt-5 pl-5 logo-color">
                 <div style="display: flex;">
                     <img src="/Images/Logo_Footer/R.png" class="w-25" style="object-fit: contain;"
                         alt="Đại học Nguyễn Tất Thành">

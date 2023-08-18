@@ -39,18 +39,21 @@ body {
 }
 
 .navbar-containt {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
 }
 
-
 .dropdown-menu {
     margin-top: 11px;
-    background-color: var(--bg-grey-color);
+    background-color: var(--main-color);
     border: none;
+}
+
+.dropdown-menu a {
+    color: white;
 }
 
 
@@ -74,7 +77,6 @@ body {
 
 /* -------------------content-main ----------------*/
 .content-main {
-    margin-top: 59px;
     position: relative;
 }
 
@@ -123,6 +125,7 @@ body {
     color: var(--text-w-color);
     text-align: center;
     justify-content: center;
+    margin-top: -6px;
 }
 
 .logo-color {

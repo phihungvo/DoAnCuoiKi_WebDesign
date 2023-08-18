@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
+
 }
 
 body {
@@ -44,11 +44,14 @@ body {
     color: var(--hover-color);
 }
 
-
 .dropdown-menu {
     margin-top: 11px;
-    background-color: var(--bg-grey-color);
+    background-color: var(--main-color);
     border: none;
+}
+
+.dropdown-menu a {
+    color: white;
 }
 
 
@@ -63,7 +66,7 @@ body {
 }
 
 .navbar-containt {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -126,6 +129,13 @@ body {
 }
 
 
+.ul-dropdown {
+    background: none;
+}
+
+
+
+
 /*----------- Footer ----------*/
 .footer-content {
     display: flex;
@@ -134,7 +144,6 @@ body {
     color: var(--text-w-color);
     text-align: center;
     justify-content: center;
-    margin-top: 70px;
 }
 
 .logo-color {

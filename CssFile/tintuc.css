@@ -45,8 +45,12 @@ body {
 
 .dropdown-menu {
     margin-top: 11px;
-    background-color: var(--bg-grey-color);
+    background-color: var(--main-color);
     border: none;
+}
+
+.dropdown-menu a {
+    color: white;
 }
 
 .img-item {
@@ -55,7 +59,7 @@ body {
 }
 
 .navbar-containt {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;

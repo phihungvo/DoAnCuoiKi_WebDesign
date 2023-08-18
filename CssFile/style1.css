@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-containt {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,8 +49,12 @@ body {
 
 .dropdown-menu {
     margin-top: 11px;
-    background-color: var(--bg-grey-color);
+    background-color: var(--main-color);
     border: none;
+}
+
+.dropdown-menu a {
+    color: white;
 }
 
 
@@ -79,7 +83,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: 59px;
 }
 
 .button-header {
@@ -237,7 +240,6 @@ body {
 /* Sub-content */
 .row-content {
     margin-top: 10px;
-    margin-bottom: 50px;
 }
 
 
