@@ -54,7 +54,7 @@ body {
 }
 
 .navbar-containt {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -64,7 +64,7 @@ body {
 
 /* ----------------Main-content -------------------*/
 .main-content {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .main-text {
