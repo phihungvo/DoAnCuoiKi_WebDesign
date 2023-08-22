@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hieu ung nha kinh</title>
+    <link rel="stylesheet" href="/BootstrapFile/css_bootstrap.min.css">
+    <script src="/BootstrapFile/1_jquery_slim.min.js"></script>
+    <script src="/BootstrapFile/2_popper.min.js"></script>
+    <script src="/BootstrapFile/3_js_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/CssFile/hieuungnhakinh.css">
+    <script src="/SourceJs/Font/kit.fontawesome.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar navbar-containt">
+        <div class="navbar-brand" style="color: black;">
+            <a href="/HomePage/index1.html"><img
+                    src="https://asiasomeday.com/vietnam/wp-content/uploads/sites/8/2020/05/Vietnam_WEATHER.png"
+                    class="logo-header" alt="main-logo"></a>
+            <a href="/HomePage/index1.html" class="text-main-color">The Weather</a>
+
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dự báo thời tiết
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/HtmlFile/nhietdo.html">Nhiệt độ</a>
+                        <a class="dropdown-item" href="/HtmlFile/luongmua.html">Lượng mưa</a>
+                        <a class="dropdown-item" href="/HtmlFile/gio.html">Gió</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/khihau.html">Khí hậu</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/tintucFirstPage.html">Tin tức</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/Map/temp.html">Map</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 70%; margin-left: 10px;" type="search"
+                    placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 text-white  border-primary"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!---------------------- Content-main ------------------------------->
+    <div class="container-fluid content-main">
+        <div class="row ml-2">
+            <!-- Left-side-bar -->
+            <div class="col-md-2">
+                <ul>
+                    <li class="list-style-head "><a href="#hieu_ung_nha_kinh">1. Hiệu ứng nhà kính là gì?</a>
+                    </li>
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample1">2. Hiệu ứng nhà kính gồm những loại nào?<i
+                                class="fa-solid fa-chevron-down ml-2" style="color: #005eff;"></i></a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body ul-dropdown">
+                                    <ul>
+                                        <li class="list-style"><a href="#nha_kinh_khi_quyen">2.1 Hiệu ứng nhà kính khí
+                                                quyển</a>
+                                        </li>
+                                        <li class="list-style"><a href="#nha_kinh_nhan_loai">2.2 Hiệu ứng nhà kính nhân
+                                                loại</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample2">3. Nguyên nhân gây ra hiệu ứng nhà kính<i
+                                class="fa-solid fa-chevron-down ml-2" style="color: #005eff;"></i></a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                <div class="card card-body ul-dropdown">
+                                    <ul>
+                                        <li class="list-style"><a href="#co2">3.1 Khí co2 – khí nhà
+                                                kinh</a>
+                                        </li>
+                                        <li class="list-style"><a href="#cfc">3.2. Khí CFC – Khí
+                                                Chlorofluorocarbon</a>
+                                        </li>
+                                        <li class="list-style"><a href="#metan">3.3. Khí metan – ch4</a>
+                                        </li>
+                                        <li class="list-style"><a href="#ozon">3.4. Ozone thong</a>
+                                        </li>
+                                        <li class="list-style"><a href="#n2o">3.5. Khí n2o – oxit
+                                                nito</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample3">4. Hậu quả của hiệu ứng nhà kính đối với trái đất<i
+                                class="fa-solid fa-chevron-down ml-2" style="color: #005eff;"></i></a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                <div class="card card-body ul-dropdown">
+                                    <ul>
+                                        <li class="list-style"><a href="#sinh_vat">4.1. Ảnh hưởng đến sinh
+                                                vật</a>
+                                        </li>
+                                        <li class="list-style"><a href="#with_nguoi">4.2. Ảnh hưởng đến with
+                                                người</a>
+                                        </li>
+                                        <li class="list-style"><a href="#nguon_nuoc">4.3. Ảnh hưởng đến nguồn
+                                                nước</a>
+                                        </li>
+                                        <li class="list-style"><a href="#bang_tan">4.4. Xuất hiện hiện tượng
+                                                bang tan</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample4">5. Các biện pháp khắc phục hiệu ứng nhà kính<i
+                                class="fa-solid fa-chevron-down ml-2" style="color: #005eff;"></i></a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                <div class="card card-body ul-dropdown">
+                                    <ul>
+                                        <li class="list-style"><a href="#trong_cay">5.1. Trồng thêm nhiều cây
+                                                xanh</a>
+                                        </li>
+                                        <li class="list-style"><a href="#tiet_kiem_dien">5.2. Tiết kiệm điện, tiết
+                                                kiệm nguồn năng lượng</a>
+                                        </li>
+                                        <li class="list-style"><a href="#di_chuyen">5.3. Tối ưu hóa các phương
+                                                tiện di chuyển</a>
+                                        </li>
+                                        <li class="list-style"><a href="#nang_luong_sach">5.4. Sử dụng nguồn năng
+                                                lượng sạch</a>
+                                        </li>
+                                        <li class="list-style"><a href="#tuyen_truyen">5.5. Tích cực tuyên truyền
+                                                bảo vệ môi trường</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+
+
+            <!----------------------- Center-content ---------------->
+            <div class="center-content col-md-7 centered-text line-spacing">
+                <h2 class="font-weight font-weight-bold-bold" name="thoi_tiet_la_gi">Hiệu ứng nhà kính là gì? Nguyên
+                    nhân, hậu quả, biện pháp khắc phục?</h2>
+                <p class="mt-4">
+                    Có lẽ,<span class="text-primary font-weight font-weight-bold-bold"> Hiệu ứng nhà kính</span> không
+                    còn là cụm từ quá xa lạ đối với chúng ta. vấn đề hiệu ứng nhà kính là
+                    Vấn đề cấp thiết và mang tính chất toàn cầu hiện nay. nếu không có các biện pháp khắc phục hay giảm
+                    thiểu hiệu ứng nhà kính, chắc chắn sẽ gây ảnh hưởng không nhỏ tới toàn nhân lon. Đặc biệt là nguy
+                    hại đến sự sống with người.
+                </p>
+                <p>Vậy <span class="text-primary font-weight font-weight-bold-bold">Hiệu ứng nhà kính</span> là gì?
+                    Chúng ta cần làm gì để khắc phục vấn đề nghiêm trọng này? Cùng
+                    tìm hiểu ngay với bài viết dưới đây nhé!</p>
+                <h4><a class="title-text" name="hieu_ung_nha_kinh" href="#header">1. Hiệu ứng nhà kính là gì?</a></h4>
+                <p>Hiệu ứng nhà kính có tên tiếng anh là greenhouse effect. Đây là hiện tượng không không khí của trái
+                    đất nóng lên do bức xạ sóng ngắn của mặt trời xuyên qua tầng khí quyển và chiếu xuặt mặt mặt></p>
+                <p>Nếu như lượng nhiệt này luôn ổn định sẽ giúp trái Đất luôn ở trạng thái can bằng. Tuy nhiên, Thực tế
+                    hiện nay, nó lại tăng qua nhiều trong bầu khí quyển khiến cho trái Đất nóng lên không ngừng.</p>
+                <img src="/Images/HieuUngNhaKinhImages/1.jpg" class="w-100 mt-4 mb-4">
+                <h4><a class="title-text" name="thoi_tiet" href="#header">2. Hiệu ứng nhà kính gồm những loại
+                        nào?</a>
+                </h4>
+                <p>Hiệu ứng nhà kính được chia làm 2 loại: hiệu ứng nhà kính khí quyển và hiệu ứng nhà kính nhân loại
+                </p>
+                <h5><a class="title-text" name="nha_kinh_khi_quyen" href="#header">2.1. Hiệu ứng nhà kính khí quyển</a>
+                </h5>
+                <p>Hiệu ứng nhà kính khí quyển là loại các tia bức xạ sone ngắn của mặt trời xuyên qua bầu khí quyển ến
+                    mặt ất và ược phản xạ lại thành các bức xạ. Một số phân tử trong bầu khí quyển có thể hấp thụ
+                    những bức xạ nhiệt này và giữ hơi ấm lại bầu khí quyển. Một số phân tử có thể kể đến là ddioxxit
+                    cacbon và hơi nước.</p>
+                <p>Ngày nay, hàm lượng của khí dioxit cacbon vào khoảng 0.036% đã đủ để tăng nhiệt độ thêm khoảng 30 độ
+                    c. Nếu không có hiệu ứng nhà kính thì nhiệt độ trái Đất là âm 15 độ c.</p>
+                <p>Như chung ta đã biết, nhiệt độ trung bình của bề mặt trái đất được quyết định từ sự cân bằng giữa
+                    nĂng
+                    lượt mặt trời xuống trái đất và lượt. Năng lượng từ mặt trời là bức xạ có bước sóng ngắn. Vì vậy, nó
+                    dễ dàng xuyên qua tầng Ozon và khí Co2 đế tới mặt đất.</p>
+                <p>Nhưng ngược lại, bức xạ nhiệt từ mặt đất là bước sóng dài và không có khả năng xuyên qua lớp khí co2.
+                    từ đó, co2 và hơi nước hấp thụ lại. Điều này làm cho trái đất có một bầu khí quyển bao quanh.</p>
+                <p>Lớp co2 được ví như một lớp kính giữ nhiệt lượng tỏa ngược vào vũ trụ của trái đất trên quy mô toàn
+                    cầu. Co2 được gọi là khí nhà kính. Ngoài ra còn có các khí khác trong khí quyển như nox, metan, cfc.
+                </p>
+                <h5><a class="title-text" name="nha_kinh_nhan_loai" href="#header">2.2. Hiệu ứng nhà kính nhân loại
+                    </a>
+                </h5>
+                <p>Vào thời kỳ trai ất mới hình thành, chỉt một số sống có thể xuất hi ện và phat triển nhờ thành phần
+                    điôxít cacbon trong bầu khí quyển nguyên thủy cao h. theo thời gian, cường độ của các tia bức xạ
+                    tăng lên.</p>
+                <p>Đồng thời, thông qua sự quang hợp, trái đất đã có cây cỏ. Cây cỏ lấy đi một phần khí dioxit cacbon
+                    trong không khí giúp khí hậu tương đối ổn định.</p>
+                <p>Trong vòng 100 năm trở lại đây, dưới tác động của vói con người, sự cân bằng này đang bị tác động. Sự
+                    thay đổi nồng độ của các khí nhà kính đã làm nhiệt độ tăng thêm 2 độ c. Điển hình của sự mất cân
+                    bằng này là khí dioxit cacbon tăng thêm 20% và khí metan tăng lên 90%.</p>
+
+
+                <h4><a class="title-text" name="nguyen_nhan" href="#header">3. Nguyên nhân gây ra hiệu ứng nhà kính</a>
+                </h4>
+                <p>Chúng ta đã biết, hiệu ứng nhà kính là do sự tăng trưởng mạnh mẽ của các khí trong bầu khí quyển. Vậy
+                    cụ thể nguyên nhân do những loại khí nào? tìm hiểu ngay dưới đây:</p>
+                <h5><a class="title-text" name="co2" href="#header">3.1. Khí co2 – khí nhà kính
+                    </a>
+                </h5>
+                <p>Khi bức xạ mặt trời xuyên qua tầng khí quyển rồi chiếu xuống mặt đất. Mặt đất sẽ hấp thụ và nóng lên.
+                    Đồng thời, bức xạ lại nhiệt có bước sóng dài vào tầng khí quyển. lLc này, khí co2 sẽ hấp thụ và tạo
+                    ra một vòng khí xung quanh trái đất khiến nhiệt độ không khí tăng lên.</p>
+                <img src="/Images/HieuUngNhaKinhImages/2.jpg" class="w-100 mt-4 mb-4">
+                <p>Như đã đề cập ở trên, lớp khí co2 này như một tấm kính lớn, bao phủ quanh trái đất. Làm cho hành tinh
+                    của chúng ta không khác gì một nhà kính lớn. Nếu không có tấm kính khổng lồ này, nhiệt độ tại trái
+                    đất sẽ luôn luôn âm khoảng 15 độ c. Thậm chí lên tới âm 25 độ c. Trên thực tế, nhiệt độ trung bình
+                    là 15 độ c. Có thể thấy hiệu ứng nhà kính đã làm cho trái đất nóng lên 38 độ c.</p>
+                <p>Những ngày này, các hoạt động sinh hoạt, kinh doanh, sản xuất và khai thác cực kỳ mạnh mẽ của with
+                    người khiến khí co2 tăng theo. Điều này làm cho hiệu ứng nhà kính tăng. Từ đó, nhiệt độ không khí
+                    cũng sẽ bị cao lên. theo ước tính của các nhà khoa học, đến nửa thế kỷ sau thì nhiệt độ của trái đất
+                    sẽ tăng từ 1,5 – 4,5 độ c.</p>
+                <h5><a class="title-text" name="cfc" href="#header">3.2. Khí cfc – khí chlorofluorocarbon
+                    </a>
+                </h5>
+                <p>Khí cfc hay chính là khí chloro fluoro carbon chiếm đến 20% trong cơ cấu các khí gây hiệu ứng nhà
+                    kính. Cfc là những hóa chất do con người tổng hợp để sử dụng trong nhiều ngành công nghiệp và nó dần
+                    dần xâm nhập vào bầu khí quy.</p>
+                <p> Cfc được dùng trong các nhà máy sản xuất điều hòa, hệ thống làm lạnh, chế tạo sản phẩm bằng chất
+                    plastic xốp như lý, vkhayàp lý ăn t. Ngoài ra, nó còn được dùng trong một số thuốc xịt, quy trình
+                    làm
+                    sạch thiết bị điện tử và là sản phẩm phụ của một sốc há phẩh trình.</p>
+                <img src="/Images/HieuUngNhaKinhImages/3.jpg" class="w-100 mt-4 mb-4">
+                <p>Về mặt hóa học, khí cfc có tính trơ, không cháy, không mùi và có thời gian lưu trữ rất dài. khi khí
+                    này được thải ra không khí, nó sẽ bay lên tầng khí quyển và có khả năng làm mòn tầng ozon bao phủ
+                    quanh trái đất. từ đó, làm cho tia cực tím từ mặt trời đến trái đất nhiều hơn và mạnh mẽ hơn.</p>
+                <p>Theo thống kế, năm 1992 khí cfc tăng khoảng 4%. tính đến năm 2050, cfc có thể là 9 tỷ tấn, khoảng 45%
+                    tổng lượng thải co2. gây ảnh hưởng cực kỳ xấu đến khí hậu toàn cầu.</p>
+                <h5><a class="title-text" name="metan" href="#header">3.3. Khí metan – ch4
+                    </a>
+                </h5>
+                <p>
+                    Khí metan có cấu tạo hóa học là ch4. khí này chiếm 13% trong cơ cấu các khí gây hiệu ứng nhà kính.
+                    theo các nghiên cứu, mỗi phân tử ch4 giữ năng lượng nhiệt gấp đến 21 lần so với phân tử co2.
+                </p>
+                <img src="/Images/HieuUngNhaKinhImages/4.jpg" class="w-100 mt-4 mb-4">
+                <p>Hiện no, do các hoạt động của with người, khí metan thải vào khí quyển ngày càng nhiều. các nguyên
+                    nhân phát thải ch4 phải kể đến như:</p>
+                <ul class="ml-5">
+                    <li>Sự phân hủy các chất hữu cơ trong các bãi rác thải rắn</li>
+                    <li>Sự sản sinh từ qua trình sinh học như men hóa đường ruột của động vật, sự phân giải kỵ khí ở đất
+                        ngập nước,…</li>
+                    <li>Sử dụng và đốt nhiên liệu hóa thạch</li>
+                    <li>Do ống dẫn nước vào các tuabin đặt dưới đáy hồ thủy điện</li>
+                </ul>
+                <h5><a class="title-text" name="ozon" href="#header">3.4. Ozone thong
+                    </a>
+                </h5>
+                <p>Khí ozon có cấu tạo hóa học là o3. khí này chiếm 8% trong cơ cấu các khí gây hiệu ứng nhà kính. ozon
+                    là thành phần chính của tầng bình lưu. có đến khoảng 90% khí ozon tập trung ở độ cao từ 19 – 23 km
+                    so với mặt đất. nó có chức năng bảo vệ sinh quyển do khả năng hấp thụ bức xạ tử ngoại và tỏa nhiệt
+                    của phân tử ozon.</p>
+                <img src="/Images/HieuUngNhaKinhImages/5.jpg" class="w-100 mt-4 mb-4">
+                <p>Khí ozon chiếm 8% trong cơ cấu các khí gây hiệu ứng nhà kính</p>
+                <p>Theo ước tính, tầng ozon đã suy giảm 5% và số lượng suy giảm ngày càng tăng do phân hủy ozon vượt qua
+                    khả năng tái tạo lại. hầu hết, o3 bị phân hủy do 4 tác nhân cơ bản:</p>
+                <ul class="ml-5">
+                    <li>Nguyên tử oxi</li>
+                    <li>Gốc hydroxyl hoạt động</li>
+                    <li>Oxitar nito</li>
+                    <li>Hợp chất clo</li>
+                </ul>
+                <h5><a class="title-text" name="n2o" href="#header">3.5. Khí n2o – oxit nito
+                    </a>
+                </h5>
+                <p>Khí n2o chiếm 5% trong cơ cấu các khí gây hiệu ứng nhà kính. bạn có biết mỗi phân tử n2o bắt giữ năng
+                    lượng nhiệt gấp 270 lần phân tử co2.</p>
+                <p>Khí n2o chiếm 5% trong cơ cấu các khí gây hiệu ứng nhà kính. bạn có biết mỗi phân tử n2o bắt giữ năng
+                    lượng nhiệt gấp 270 lần phân tử co2.</p>
+                <p>Ngoài ra, oxit nitơ phản ứng với nguyên tử oxy năng lượng cao sẽ tạo thành hợp chất nitric oxide (no)
+                    khiến tầng ozon suy yếu. hiện no, hàm lượng của n2o đang tăng cao trên toàn cầu, khoảng 0,2 – 3%
+                    tăng hàng năm. Ước tính, có đến 10 triệu tấn oxit nitơ thải ra môi trường mỗi năm.</p>
+                <p>Ngoài ra, nguyên nhân dẫn đến hiệu ứng nhà kính còn phải kể đến như do khí so2, sf cf3 và cả hơi
+                    nước. các hoạt động của with người đang khiến những khí này tăng cao, làm phá vỡ kết cấu của tầng
+                    ozon và làm giảm nồng độ khí ozon.</p>
+
+                <h4><a class="title-text" name="hau_qua" href="#header">4. Hậu quả của hiệu ứng nhà kính đối với trái
+                        đất</a></h4>
+                <p>Từ những thông tin bên trên, có lẽ hậu quả lớn nhất chính là biến đổi khí hậu. hãy nói cách khác,
+                    hiệu ứng nhà kính tác động đến các hiện tượng biến đổi khí hậu. cụ thể, nó gây một số tác động như
+                    sau:</p>
+                <img src="/Images/HieuUngNhaKinhImages/7.webp" class="w-100 mt-4 mb-4">
+                <h5><a class="title-text" name="sinh_vat" href="#header">4.1. Ảnh hưởng đến sinh vật
+                    </a>
+                </h5>
+                <p>Sự nóng lên của trái đất sẽ làm thay đổi môi trường sống của các loại sinh vật. theo sự biến đổi toàn
+                    cầu này, các loài sinh vật phải thích nghi và đáp ứng với môi trường sống đầy khắc nghiệt này. tuy
+                    nhiên, chúng không thể thích nghi kịp và dần dần biến mất.</p>
+                <h5><a class="title-text" name="nguon_nuoc" href="#header">4.2. Ảnh hưởng đến nguồn nước
+                    </a>
+                </h5>
+                <p>Hiệu ứng nhà kính làm ảnh hưởng đến chất lượng cũng như lượng nước trên trái đất. dẫn đến sự thiếu
+                    nước sạch để con người sinh hoạt và trong cả qua trình hoạt động sản xuất, kinh doanh.</p>
+                <h5><a class="title-text" name="with_nguoi" href="#header">4.3. Ảnh hưởng đến con người
+                    </a>
+                </h5>
+                <p>Chính chúng ta đang làm hại chúng ta. sức khỏe with người đang bị đe dọa nghiêm trọng khi bệnh tật
+                    xuất hiện ngày càng nhiều. nắng nóng, mưa nhiều chính là điều kiện thuận lợi cho các vi khuẩn, vi
+                    sinh vật phát triển. Đồng thời, các chất thải, khí thải cũng gia tăng bệnh tật và làm giảm hệ miễn
+                    dịch của chúng ta.</p>
+                <p>Ngoài ra, làm việc ở nhiệt độ cao rất nguy hiểm khí cơ thể không kịp để làm mát. ngày nay, số lượng
+                    người chết vì nắng nóng ngày càng kéo dài.</p>
+                <h5><a class="title-text" name="bang_tan" href="#header">4.4. Xuất hiện hiện tượng bang tan
+                    </a>
+                </h5>
+                <p>Hiện no, băng tuyết ở bắc cực và nam cực đang có hiện tượng tan nhanh. Điều này sẽ làm cho lượng nước
+                    biển tăng cao và dẫn đến nạn hồng thủy. trong tương lai, một số quốc gia sẽ không có tên trên bản đồ
+                    vì mực nước biển dâng cao.</p>
+                <p>Theo ước tính, năm 2020, trái đất mất 28 nghìn tỷ tấn băng trong 23 năm qua do hiện tượng nóng lên
+                    toàn cầu.</p>
+                <h4><a class="title-text" name="khac_phuc" href="#header">5. Các biện pháp khắc phục hiệu ứng nhà
+                        kính</a></h4>
+                <h5><a class="title-text" name="trong_cay" href="#header">5.1. Trồng thêm nhiều cây xanh
+                    </a>
+                </h5>
+                <p>Đây là một trong những biện pháp hiệu quả và đơn giản nhất trong việc làm giảm sự nhiệt độ tăng cao
+                    trên toàn cầu. chắc hẳn bạn đã biệt, cây xanh sẽ giúp hấp thụ co2 thông qua qua trình quang hợp. từ
+                    đó, lượng co2 – khí nhà kính sẽ giảm đáng kể. giúp giảm hiện tượng hiệu ứng nhà kính hiện nay.</p>
+                <p>Hiện nay, chính phủ các nước cũng đang triển khai trồng rừng diện tích lớn. trong đó, việt nam cũng
+                    đang dần làm tốt việc này.</p>
+                <h5><a class="title-text" name="tiet_kiem" href="#header">5.2. Tiết kiệm điện, tiết kiệm nguồn năng
+                        lượng
+                    </a>
+                </h5>
+                <p>Tiết kiệm nguồn năng lượng chúng ta đang sử dụng là một cách giảm hiệu ứng nhà kính hiệu quả. Điện
+                    năng được sản xuất từ ​​​​việc đốt các nguyên liệu, nhiên liệu hóa thạch.</p>
+                <p>Trong qua trình sản xuất năng lượng này, một lượng lớn khí co2 được thải ra môi trường. vì vậy, tiết
+                    kiệm năng lượng cụ thể là tiết kiệm điện là một cách giảm hiệu ứng, giảm ô nhiễm không khí.</p>
+                <h5><a class="title-text" name="di_chuyen" href="#header">5.3. Tối ưu hóa các phương tiện di chuyển
+                    </a>
+                </h5>
+                <p>Các phương tiện truyền thông như ô tô, xe máy,.. là nguyên nhân chính sản sinh ra khí co2, n2o và
+                    khói bụi gây ô nhiễm môi trường. vì vậy, bạn có thể bảo vệ môi trường bằng cách hạn chế các loại
+                    phương tiện này mà thay vào đó là đi xe đạp</p>
+                <h5><a class="title-text" name="nang_luong" href="#header">5.4. Sử dụng nguồn năng lượng sạch
+                    </a>
+                </h5>
+                <p>Nguồn năng lượng sạch là nguồn năng lượng từ gió, năng lượng mặt trời. việc sử dụng nguồn năng lượng
+                    này sẽ hạn chế hiệu ứng nhà kính, giảm ô nhiễm môi trường.</p>
+                <p>Gia đình bạn hãy sử dụng bình năng lượng mặt trời sơn hà từ năng lượng mặt trời để bảo vờ môi trượng.
+                    thái dương năng là biện pháp làm nóng từ năng lượng mặt trời. sử dụng thái dương năng không chỉ giúp
+                    bảo vệ môi trường mà còn giúp gia đình bạn tiết kiệm điện đáng kể. ngoài ra, hãy sử dụng thêm bể tự
+                    hoại của sơn hà để môi trường luôn sạch và nguồn chất thải được xử l chu đún.</p>
+                <h5><a class="title-text" name="tuyen_truyen" href="#header">5.5. Tích cực tuyên truyền bảo vệ môi
+                        trường
+                    </a>
+                </h5>
+                <p>Việc đẩy mạnh các hoạt động, phong trào bảo vệ môi trường là rất cần thiết. cần cung cấp kiến ​​thức
+                    cho người dân về hiệu ứng nhà kính, tầm quan trọng và tác hại của nó tới sự sống trên hành tinh
+                    củtaa chún. Đồng thời, nâng cao ý thức cũng như trách nhiệm của mỗi người dân vì con người và các
+                    loại sinh vật.</p>
+
+
+
+                <div>
+                    <div class="another-blog">
+                        <h3 class="font-weight-bold">BÀI VIẾT LIÊN QUAN</h3>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row mt-4">
+                            <!-- First blog -->
+                            <div class="col-md-4">
+                                <img src="/Images/TinTucImages/TinTucFirstPage/5.jpg" class="w-100 img-hover">
+                                <div class="content-inside centered-text mt-3">
+                                    <h5><a href="/HtmlFile/tintuc.html" class="text-title">[GÓC HỎI ĐÁP] Tối nay có
+                                            mưa
+                                            sao
+                                            băng không?</a>
+                                    </h5>
+                                    <div class="content-detail mt-3">
+                                        <i class="fa-solid fa-eye mr-3"> 492</i>
+                                        <i class="fa-solid fa-clock "> 19/07/2023</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second blog -->
+                            <div class="col-md-4">
+                                <img src="/Images/TinTucImages/TinTucFirstPage/6.jpg" class="w-100 img-hover">
+                                <div class="content-inside centered-text mt-3">
+                                    <h5><a href="/HtmlFile/tintuc.html" class="text-title">[GÓC HỎI ĐÁP] Tối nay có
+                                            mưa
+                                            sao
+                                            băng không?</a>
+                                    </h5>
+                                    <div class="content-detail mt-3">
+                                        <i class="fa-solid fa-eye mr-3"> 492</i>
+                                        <i class="fa-solid fa-clock "> 19/07/2023</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Thirds blog -->
+                            <div class="col-md-4">
+                                <img src="/Images/TinTucImages/TinTucFirstPage/7.jpg" class="w-100 img-hover">
+                                <div class="content-inside centered-text mt-3">
+                                    <h5><a href="/HtmlFile/tintuc.html" class="text-title">[GÓC HỎI ĐÁP] Tối nay có
+                                            mưa
+                                            sao
+                                            băng không?</a>
+                                    </h5>
+                                    <div class="content-detail mt-3">
+                                        <i class="fa-solid fa-eye mr-3"> 492</i>
+                                        <i class="fa-solid fa-clock "> 19/07/2023</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ Comment part ------------>
+                <div class="container mt-5">
+                    <div class="header-comment col-md-12 bg-info ">
+                        <h4>Bình luận (2)</h4>
+                    </div>
+                    <div class="user-comment col-md-12 mt-4 position-relative">
+                        <div class="icon-user">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="content-comment ml-4">
+                            <h5>Lê Thị Hiền</h5>
+                            <p style="color: grey;"><span style="color: red;"># </span>7, tháng 7,2023</p>
+                            <p style="margin-top: -10px;">Bài viết rất hay :v</p>
+                        </div>
+                        <div class="respon-comment position-absolute">
+                            <span style="color: red;">Trả lời</span>
+                            <i class="fa-solid fa-down-long" style="color: #ff0000;"></i>
+                        </div>
+                    </div>
+                    <hr class="col-md-8" style="width: 65%;">
+                    <div class="user-comment col-md-12 mt-4 ml-5 position-relative">
+                        <div class="icon-user">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="content-comment ml-2">
+                            <h5>Phương Anh</h5>
+                            <p style="color: grey;"><span style="color: red;"># </span>7, tháng 7,2023</p>
+                            <p style="margin-top: -10px;">Đúng rùi :))</p>
+                        </div>
+                        <div class="respon-comment position-absolute mr-5">
+                            <span style="color: red;">Trả lời</span>
+                            <i class="fa-solid fa-down-long" style="color: #ff0000;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5 col-md-12">
+                    <form class="post-comment position-relative">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><span class="text-bold">Bình luận của bạn</span></label>
+                            <input type="text" style="height: 100px;" class="form-control" id="formGroupExampleInput"
+                                placeholder="Nội dung bình luận (*)">
+                            <button class=" mt-4 bg-info send-button w-100"><span>Gửi bình luận</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-------------------- Quảng cáo -------------------->
+            <div class="view-more-content col-md-3">
+                <iframe class="w-100 h-100 mt-5"
+                    src="https://obin.distinctrobin.com/adt/cpc/tvcads/2023/08/1160x250talent_300_600_16909671528383.html?url=%2F%2Fdistinctrobin.com%2Fatvc%3Fp%3D1318513%253B604000%253B33852%253B-1%253B-1%253B9%253B0%253B0%253Bsoha.vn%26path%3D%252Fhau-qua-chua-tung-co-cua-bien-doi-khi-hau-khap-the-gioi-20210812093152877.htm%26cov%3D1%26lsn%3D1691766045240%26ce%3D1%26lc%3D%26cr%3D%26ui%3D%26uuid%3D%26profileID%3D%26sspz%3D2102%26sspr%3D%26ctr%3D%26rid%3D067de241-2437-4c48-a89e-abf68c338ec4120-64d64d1e%26re%3Dhttps%253A%252F%252Favn.innity.com%252Fclick%252F%253Fadid%253D337108%2526zoneid%253D0%2526cb%253D52565%2526url%253Dhttps%25253A%25252F%25252Ficheck.vn%25252Fsan-pham%25252Fthuc-pham-bo-sung-nuoc-tang-luc-red-bull-voi-vitamin-va-kem-8850228007617%25253Futm_source%25253DRedbull%252526utm_medium%25253DAPX%252526utm_campaign%25253DRedbull%25252520Thai&amp;vast=https%3A%2F%2Fsspapi.admicro.vn%2Fssp_request%2Fvideo%3Fu%3Dsoha.vn%252Fhau-qua-chua-tung-co-cua-bien-doi-khi-hau-khap-the-gioi-20210812093152877.htm%26z%3D33852%26p%3D1%26w%3D650%26h%3D300%26%26lsn%3D1691766045240%26dgid%3D5b8ba0f42824f5ab11c378ddf0ac588d%26l%3D5%26loc%3D5%26i%3D3017660451934205671%26isdetail%3D1%26pid%3D%26tags%3D5%26adstype%3D%26vtype%3D8%26vid%3D%26bannerid%3D604000&amp;admid=titahotIframe_33852_2102_604000&amp;autoplay=0&amp;temp=30&amp;loc=5&amp;weath=2"
+                    frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <!-------- Move to top button-------->
+        <div class="move-to-top-button">
+            <a href="#">
+                <i class="fa-solid fa-house" style="color: #fff;"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Footer-Content -->
+    <div class="container-fluid footer-content">
+        <div class="row mb-5">
+            <div class="col-md-6 col-sm-12 mt-5 pl-5 logo-color">
+                <div style="display: flex;">
+                    <img src="/Images/Logo_Footer/R.png" class="w-25" style="object-fit: contain;"
+                        alt="Đại học Nguyễn Tất Thành">
+                    <div class="text-left mt-5">
+                        <h3 class="font-weight font-weight-bold-bold">NGUYEN TAT THANH</h3>
+                        <h3>UNIVERSITY</h3>
+                        <hr style="border: 2px solid #09057d;" class="w-75">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12" style="margin-top: 90px;">
+                <h5>THÔNG TIN SINH VIÊN</h5>
+                <p class="mt-4">Họ và tên: Võ Phi Hùng</p>
+                <p>Mã số: 2100009273</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="text-white">Email:
+                    vophihung987@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

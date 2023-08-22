@@ -136,8 +136,21 @@ body {
     margin-bottom: 100px;
 }
 
-
-
+.move-to-top-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    right: 20px;
+    bottom: 10%;
+    z-index: 99;
+}
 
 
 /* ---------------Left-side-bar --------------*/

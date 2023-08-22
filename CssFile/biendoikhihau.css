@@ -108,6 +108,36 @@ body {
     display: inline-block;
 }
 
+
+.user-comment {
+    display: flex;
+}
+
+.user-comment .icon-user {
+    font-size: 50px;
+}
+
+.respon-comment {
+    top: 0;
+    right: 0;
+}
+
+.post-comment {
+    top: 0;
+    left: 0;
+}
+
+.send-button {
+    border: none;
+    padding: 5px 0;
+    border-radius: 4px;
+    width: 68%;
+}
+
+.send-button:hover {
+    color: white;
+}
+
 .line-spacing {
     line-height: 30px;
 }
@@ -144,6 +174,22 @@ body {
 .title-text {
     font-weight: 800;
     color: #000;
+}
+
+.move-to-top-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    right: 20px;
+    bottom: 10%;
+    z-index: 99;
 }
 
 

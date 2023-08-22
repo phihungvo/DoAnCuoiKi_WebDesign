@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai Niem Thoi Tiet</title>
+    <link rel="stylesheet" href="/BootstrapFile/css_bootstrap.min.css">
+    <script src="/BootstrapFile/1_jquery_slim.min.js"></script>
+    <script src="/BootstrapFile/2_popper.min.js"></script>
+    <script src="/BootstrapFile/3_js_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/CssFile/khainiemthoitiet.css">
+    <script src="/SourceJs/Font/kit.fontawesome.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar navbar-containt">
+        <div class="navbar-brand" style="color: black;">
+            <a href="/HomePage/index1.html"><img
+                    src="https://asiasomeday.com/vietnam/wp-content/uploads/sites/8/2020/05/Vietnam_WEATHER.png"
+                    class="logo-header" alt="main-logo"></a>
+            <a href="/HomePage/index1.html" class="text-main-color">The Weather</a>
+
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dự báo thời tiết
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/HtmlFile/nhietdo.html">Nhiệt độ</a>
+                        <a class="dropdown-item" href="/HtmlFile/luongmua.html">Lượng mưa</a>
+                        <a class="dropdown-item" href="/HtmlFile/gio.html">Gió</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/khihau.html">Khí hậu</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/tintucFirstPage.html">Tin tức</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-white" href="/HtmlFile/Map/temp.html">Map</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 70%; margin-left: 10px;" type="search"
+                    placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 text-white  border-primary"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!---------------------- Content-main ------------------------------->
+    <div class="container-fluid content-main">
+        <div class="row ml-2">
+            <!-- Left-side-bar -->
+            <div class="col-md-2">
+                <ul>
+                    <li class="list-style-head "><a href="#thoi_tiet_la_gi">1. Thời tiết là gì?</a>
+                    </li>
+                    <p style="margin-bottom: 0px;">
+                        <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample1">2. Một số khái niệm về thời tiết<i
+                                class="fa-solid fa-chevron-down ml-2" style="color: #005eff;"></i></a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body ul-dropdown">
+                                    <ul>
+                                        <li class="list-style"><a href="#cuc_doan">2.1 Thời tiết cực đoan là gì?</a>
+                                        </li>
+                                        <li class="list-style"><a href="#kho_hanh">2.2 Thời tiết hanh khô là gì?</a>
+                                        </li>
+                                        <li class="list-style"><a href="#nom">2.3 Thời tiết nồm là gì?</a>
+                                        </li>
+                                        <li class="list-style"><a href="#di_ung">2.4 Bệnh dị ứng thời tiết là gì?</a>
+                                        </li>
+                                        <li class="list-style"><a href="#chi_so_uv">2.5 Chỉ số UV của thời tiết là
+                                                gì?</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li class="list-style-head"><a href="#khi_hau">3. Khí hậu là gì?</a></li>
+                    <li class="list-style-head"><a href="#khac_nhau">4. Sự khác nhau của thời tiết và
+                            khí hậu</a></li>
+                    <li class="list-style-head"><a href="#nguyen_nhan">5. Nguyên nhân tạo nên sự khác
+                            biệt giữa thời tiết là gì khí hậu</a></li>
+                    <li class="list-style-head"><a href="#tai_sao">6. Tại sao lại có sự khác nhau giữa
+                            khí hậu ở đại dương và khí hậu ở lục địa?</a></li>
+                </ul>
+            </div>
+
+
+
+            <!----------------------- Center-content ---------------->
+            <div class="center-content col-md-7 centered-text line-spacing">
+                <h2 class="font-weight font-weight-bold-bold" name="thoi_tiet_la_gi">Thời tiết là gì? Sự khác biệt về
+                    thời tiết và khí hậu</h2>
+                <p class="mt-4">
+                    Dù thời tiết và khí hậu là hai khái niệm hoàn toàn khác nhau nhưng hẳn cũng đã có nhiều người lầm
+                    tưởng rằng thời tiết và khí hậu là một. Vậy bạn có biết <span
+                        class="text-primary font-weight font-weight-bold-bold">thời tiết</span> là gì, khí hậu là gì?
+                    Hãy tìm hiểu
+                    sự khác biệt của chúng trong bài viết dưới đây nhé. </p>
+                <h4><a class="title-text" name="thoi_tiet" href="#header">Thời tiết là gì?</a></h4>
+                <img src="/Images/ThoiTietVaKhiHauImages/1.jpg" class="w-100">
+                <p class="mt-3">Thời tiết là trạng thái của khí quyển tại một thời điểm, khu vực cụ thể được xác định
+                    bằng các yếu tố và
+                    hiện tượng khí tượng. Ngoài ra, thời tiết còn được xác định bằng các yếu tố như nắng, mưa, độ nóng,
+                    lạnh, ẩm thấp hay khô ráo… ở một địa phương cụ thể trong khoảng thời gian ngắn.</p>
+                <p>Thời tiết thường rất dễ thay đổi có thể ngay trong một buổi, một ngày hoặc vài ngày. Thời tiết thường
+                    sẽ
+                    bị phụ thuộc vào sự chênh lệch áp suất không khí giữa các địa điểm khác nhau. Đặc biệt hơn nữa là
+                    góc
+                    chiếu ánh sáng tại một điểm có thể cho thấy sự khác biệt giữa áp suất với nhiệt độ.</p>
+                <p>Ngoài ra, dòng chảy không khí mạnh là kết quả của sự tương phản mạnh về nhiệt độ không khí giữa khu
+                    vực
+                    nhiệt đới và cực.</p>
+                <div class="another-blog"><a href="/HtmlFile/khainiemthoitiet.html">Rét nàng Bân là gì? Giải thích tại
+                        sao lại gọi rét nàng Bân</a></div>
+                <h4><a class="title-text mt-5" name="bien_doi_khi_hau_la_gi" href="#header">Một số khái niệm về thời
+                        tiết</a>
+                </h4>
+
+                <p><a name="cuc_doan" href="#header" class="font-italic font-weight-bold mt-4 text-dark">Thời tiết cực
+                        đoan là gì?</a></p>
+                <p>Thời tiết cực đoan là các hiện tượng thời tiết xảy ra trái mùa, không tốt gây nguy hiểm tới mạng
+                    sống,
+                    sức khỏe con người, thậm chí bất ổn về đời sống xã hội nghiêm trọng.</p>
+                <p>Các dạng thời tiết cực đoan mang tới sự khắc nghiệt, nhiều độc hại. Gọi là thời tiết cực đoan ý chỉ
+                    những hiệu ứng tiêu cực, không hay xảy ra hoặc xảy ra một cách bất thường, đột ngột gây thiệt hại
+                    lớn về
+                    cả người và của. Thời tiết cực đoan sẽ không tuân theo quy luật nào cả và khi tới cũng không theo
+                    những
+                    mốc thời gian cố định, không thể dự đoán. Vậy nên con người thường trở tay không kịp, chỉ có thể
+                    thông
+                    báo trước vài ngày dựa trên một vài dấu hiệu để nhận biết rõ ràng.</p>
+                <p>Nhiều kiểu hiện tượng thời tiết cực đoan có thể thay đổi liên tục thuộc về kinh độ, vĩ độ, địa hình,
+                    khí
+                    quyển. Ví dụ như gió giật mạnh, cháy rừng, mưa đá, bão lũ, sét, lốc xoáy, vòi rồng…</p>
+
+                <p><a name="hanh_kho" href="#header" class="font-italic font-weight-bold mt-4 text-dark">Thời tiết hanh
+                        khô là gì?</a></p>
+                <p>Thời tiết hanh khô là khi độ ẩm thấp trong không khí xuống quá thấp. Kiểu thời tiết này không chỉ gây
+                    ra hiện tượng khô da mà còn có thể khiến chúng ta bị ngứa mắt, chảy máu cam, gặp các vấn đề về
+                    xoang, bệnh hô hấp, ngủ không yên giấc, đau cơ, thậm chí còn bị cảm lạnh và cúm. Vào thời điểm gặp
+                    loại thời tiết này chúng ta nên bổ sung nước cho cơ thể, dùng kem dưỡng ẩm để hạn chế sự có hại cho
+                    da.</p>
+
+                <p><a name="nom" href="#header" class="font-italic font-weight-bold mt-4 text-dark">Thời tiết nồm là
+                        gì?</a></p>
+                <img src="/Images/ThoiTietVaKhiHauImages/2.jpg" class="w-100">
+                <p class="mt-4">Thời tiết nồm là hiện tượng thời tiết đặc trưng của các tỉnh ở phía đông Bắc Bộ, xảy ra
+                    khi độ ẩm
+                    không khí đạt trên 90%. Lúc này, xung quanh nhà ở sẽ có những dấu hiệu cảnh báo như bị đọng sương
+                    trên bề mặt tường, nền nhà và đồ nội thất. Nguyên nhân là do hơi ẩm lúc này trong không khí rất cao,
+                    làm cho nước bị ngưng tụ, đọng lại trên mọi bề mặt mà nó có thể bám vào. Chính vì vậy, thời tiết nồm
+                    gây ảnh hưởng rất nhiều đến sự sinh hoạt thường ngày và tất nhiên là cả sức khỏe của con người.</p>
+
+                <p><a name="di_ung" href="#header" class="font-italic font-weight-bold mt-4 text-dark">Bệnh dị ứng thời
+                        tiết là gì?</a></p>
+                <img src="/Images/ThoiTietVaKhiHauImages/3.jpg" class="w-100">
+                <p class="mt-4">Dị ứng thời tiết là một hiện tượng xảy ra đối với cơ thể chúng ta vào những khoảng thời
+                    gian chuyển mùa, do sự thay đổi nhiệt độ đột ngột từ nóng sang lạnh hoặc độ ẩm ảnh hưởng đến sự phát
+                    triển của nấm mốc hoặc thay đổi nồng độ phấn hoa trong không khí từ đó tác động đến hệ miễn dịch của
+                    cơ thể. </p>
+                <p>Sự rối loạn hệ miễn dịch trong cơ thể là nguyên nhân chính dẫn đến bệnh dị ứng thời tiết. Cơ thể
+                    sẽ
+                    xuất hiện các phản ứng dị ứng, sản sinh ra hàng loạt kháng thể, các chất hóa học trong cơ thể
+                    nhằm
+                    chống lại yếu tố kích thích từ môi trường bên ngoài. Cơ chế sản sinh histamin cũng là hoạt động
+                    vô
+                    cùng quan trọng trong hệ miễn dịch cũng sẽ gây ảnh hưởng nhất định đến tình trạng dị ứng.</p>
+
+                <p><a name="chi_so_uv" href="#header" class="font-italic font-weight-bold mt-4 text-dark">Chỉ số UV của
+                        thời tiết là gì?</a></p>
+                <p>Chỉ số UV của thời tiết là số đo bức xạ UV hiện hữu trên bề mặt trái đất. Dựa vào chỉ số UV, chúng ta
+                    có thể biết được mức độ bức xạ cao hay thấp và mức độ ảnh hưởng của nó đến làn da thế nào. Cường độ
+                    tiếp xúc với tia cực tím cũng có thể thay đổi theo vị trí địa lý, từng mùa và thời tiết.</p>
+                <h4><a class="title-text mt-5" name="khi_hau" href="#head">Khí hậu là gì?
+                    </a>
+                </h4>
+                <img src="/Images/ThoiTietVaKhiHauImages/4.jpg" class="w-100">
+                <p class="mt-4">
+                    Khí hậu là sự tổng hợp của những hiện tượng thời tiết, bao gồm các yếu tố nhiệt độ, độ ẩm, lượng
+                    mưa, áp suất khí quyển… Các hiện tượng này xảy ra trong khí quyển với nhiều yếu tố khí tượng khác
+                    diễn ra trong một khoảng thời gian dài của một vùng miền cụ thể.
+                </p>
+                <h4><a class="title-text mt-5" name="khac_nhau" href="#header">Sự khác nhau của thời tiết và
+                        khí hậu
+                    </a>
+                </h4>
+                <p>Thời tiết và khí hậu có rất nhiều điểm khác nhau mà có thể bạn chưa biết. Trước hết, chúng ta hãy
+                    cùng
+                    chỉ ra một số điểm đặc biệt của khí hậu so với thời tiết.</p>
+                <p>Khí hậu chính là thời tiết trung bình ở một khu vực nhất định. Khí hậu của một nơi phải mất vài năm
+                    để
+                    thay đổi do vậy nó không thể thay đổi thường xuyên. Nhiệt độ và lượng mưa là hai yếu tố chính có ảnh
+                    hưởng đến khí hậu.</p>
+                <p>Tiếp theo là một số điểm về thời tiết khác so với khí hậu. Đầu tiên, thời tiết là điều kiện khí quyển
+                    diễn ra thường xuyên của một khu vực cụ thể. Thời tiết thường sẽ đề cập đến nhiệt độ, độ ẩm và tốc
+                    độ
+                    gió.</p>
+                <p>Thời tiết là điều kiện của khí quyển trong một khu vực nhất định. Nó có thể thay đổi trong vài giờ
+                    hoặc
+                    thậm chí trong vài phút. Đây chính là điểm rõ rệt nhất trong sự khác nhau giữa thời tiết và khí hậu.
+                </p>
+                <p>Đặc biệt, thời tiết sẽ bị ảnh hưởng rất nhiều bởi các yếu tố nhiệt độ, độ ẩm, áp suất của không khí,
+                    lượng mây, mưa.</p>
+                <h4><a class="title-text mt-5" name="nguyen_nhan" href="#header">Nguyên nhân tạo nên sự khác
+                        biệt giữa thời tiết là gì khí hậu
+                    </a>
+                </h4>
+                <img src="/Images/ThoiTietVaKhiHauImages/5.jpg" class="w-100 mt-4">
+                <p class="mt-4">Nguyên nhân tạo nên sự khác biệt giữa khí hậu và thời tiết rất rõ ràng. Sự khác biệt này
+                    có thể là do khí hậu của một khu vực sẽ bị ảnh hưởng bởi tọa độ địa lý, dạng địa hình, độ cao, độ ổn
+                    định của băng tuyết bao phủ cũng như là các dòng nước lưu ở đại dương lân cận.</p>
+                <p>Còn về thời tiết trong một khu vực nhất định có thể bị thay đổi bởi các yếu tố như áp suất không khí,
+                    độ ẩm, nhiệt độ, tốc độ, hướng gió…</p>
+                <h4><a class="title-text mt-5" name="tai_sao" href="#header">Tại sao lại có sự khác nhau
+                        giữa khí hậu ở đại dương và khí hậu ở lục địa?
+                    </a>
+                </h4>
+                <p class="mt-3">Sự khác nhau giữa hai loại khí hậu đại dương và khí hậu lục địa bắt nguồn từ nhiều lý do
+                    đặc biệt.
+                    Trước hết vì sự hấp thụ nhiệt của đất và nước là khác nhau. Điều này dẫn đến việc nhiệt độ giữa mặt
+                    nước và mặt đất cũng tăng giảm khác nhau, các loại đất đá thường mau nóng và mau nguội.</p>
+                <p>Hơn thế nữa, các nguồn nước nóng chậm và lâu nguội hơn. Sự khác nhau về nhiệt độ giữa nước và đất sẽ
+                    làm cho nhiệt độ không khí ở vùng gần biển và vùng nằm sâu trong lục địa có sự khác nhau. Điều này
+                    là nguyên nhân chính dẫn đến sự khác nhau giữa khí hậu đại dương và khí hậu lục địa.</p>
+                <p>Vậy là với bài viết vừa rồi, chúng ta đã cùng nhau tìm hiểu thời tiết là gì khí hậu là gì cùng những
+                    điểm khác nhau giữa hai khái niệm này. Hi vọng các bạn thấy bài viết vừa rồi là bổ ích. Đừng quên
+                    đón đọc những nội dung thú vị tiếp theo của chúng mình nhé.</p>
+
+
+                <!------ Comment part ------------>
+                <div class="container mt-5">
+                    <div class="header-comment col-md-12 bg-info ">
+                        <h4>Bình luận (2)</h4>
+                    </div>
+                    <div class="user-comment col-md-12 mt-4 position-relative">
+                        <div class="icon-user">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="content-comment ml-4">
+                            <h5>Lê Thị Hiền</h5>
+                            <p style="color: grey;"><span style="color: red;"># </span>7, tháng 7,2023</p>
+                            <p style="margin-top: -10px;">Bài viết rất hay :v</p>
+                        </div>
+                        <div class="respon-comment position-absolute">
+                            <span style="color: red;">Trả lời</span>
+                            <i class="fa-solid fa-down-long" style="color: #ff0000;"></i>
+                        </div>
+                    </div>
+                    <hr class="col-md-8" style="width: 65%;">
+                    <div class="user-comment col-md-12 mt-4 ml-5 position-relative">
+                        <div class="icon-user">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="content-comment ml-2">
+                            <h5>Phương Anh</h5>
+                            <p style="color: grey;"><span style="color: red;"># </span>7, tháng 7,2023</p>
+                            <p style="margin-top: -10px;">Đúng rùi :))</p>
+                        </div>
+                        <div class="respon-comment position-absolute mr-5">
+                            <span style="color: red;">Trả lời</span>
+                            <i class="fa-solid fa-down-long" style="color: #ff0000;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5 col-md-12">
+                    <form class="post-comment position-relative">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><span class="text-bold">Bình luận của bạn</span></label>
+                            <input type="text" style="height: 100px;" class="form-control"
+                                id="formGroupExampleInput" placeholder="Nội dung bình luận (*)">
+                            <button class=" mt-4 bg-info send-button w-100"><span>Gửi bình luận</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-------------------- Quảng cáo -------------------->
+            <div class="view-more-content col-md-3">
+                <iframe class="w-100 h-100 mt-5"
+                    src="https://obin.distinctrobin.com/adt/cpc/tvcads/2023/08/1160x250talent_300_600_16909671528383.html?url=%2F%2Fdistinctrobin.com%2Fatvc%3Fp%3D1318513%253B604000%253B33852%253B-1%253B-1%253B9%253B0%253B0%253Bsoha.vn%26path%3D%252Fhau-qua-chua-tung-co-cua-bien-doi-khi-hau-khap-the-gioi-20210812093152877.htm%26cov%3D1%26lsn%3D1691766045240%26ce%3D1%26lc%3D%26cr%3D%26ui%3D%26uuid%3D%26profileID%3D%26sspz%3D2102%26sspr%3D%26ctr%3D%26rid%3D067de241-2437-4c48-a89e-abf68c338ec4120-64d64d1e%26re%3Dhttps%253A%252F%252Favn.innity.com%252Fclick%252F%253Fadid%253D337108%2526zoneid%253D0%2526cb%253D52565%2526url%253Dhttps%25253A%25252F%25252Ficheck.vn%25252Fsan-pham%25252Fthuc-pham-bo-sung-nuoc-tang-luc-red-bull-voi-vitamin-va-kem-8850228007617%25253Futm_source%25253DRedbull%252526utm_medium%25253DAPX%252526utm_campaign%25253DRedbull%25252520Thai&amp;vast=https%3A%2F%2Fsspapi.admicro.vn%2Fssp_request%2Fvideo%3Fu%3Dsoha.vn%252Fhau-qua-chua-tung-co-cua-bien-doi-khi-hau-khap-the-gioi-20210812093152877.htm%26z%3D33852%26p%3D1%26w%3D650%26h%3D300%26%26lsn%3D1691766045240%26dgid%3D5b8ba0f42824f5ab11c378ddf0ac588d%26l%3D5%26loc%3D5%26i%3D3017660451934205671%26isdetail%3D1%26pid%3D%26tags%3D5%26adstype%3D%26vtype%3D8%26vid%3D%26bannerid%3D604000&amp;admid=titahotIframe_33852_2102_604000&amp;autoplay=0&amp;temp=30&amp;loc=5&amp;weath=2"
+                    frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <!-------- Move to top button-------->
+        <div class="move-to-top-button">
+            <a href="#">
+                <i class="fa-solid fa-house" style="color: #fff;"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Footer-Content -->
+    <div class="container-fluid footer-content">
+        <div class="row mb-5">
+            <div class="col-md-6 col-sm-12 mt-5 pl-5 logo-color">
+                <div style="display: flex;">
+                    <img src="/Images/Logo_Footer/R.png" class="w-25" style="object-fit: contain;"
+                        alt="Đại học Nguyễn Tất Thành">
+                    <div class="text-left mt-5">
+                        <h3 class="font-weight font-weight-bold-bold">NGUYEN TAT THANH</h3>
+                        <h3>UNIVERSITY</h3>
+                        <hr style="border: 2px solid #09057d;" class="w-75">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12" style="margin-top: 90px;">
+                <h5>THÔNG TIN SINH VIÊN</h5>
+                <p class="mt-4">Họ và tên: Võ Phi Hùng</p>
+                <p>Mã số: 2100009273</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="text-white">Email:
+                    vophihung987@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
