@@ -66,25 +66,18 @@ body {
 .main-content {
     margin-top: 100px;
 }
-
 .main-text {
     font-weight: 600;
 }
-
 .centered-text {
     text-align: justify;
 }
-
 .centered-text p {
     display: inline-block;
 }
-
 .sub-content {
     display: grid;
 }
-
-
-
 .another-blog {
     padding: 10px 0px 10px 20px;
     border-left: 3px solid red;
@@ -100,39 +93,30 @@ body {
 .user-comment {
     display: flex;
 }
-
 .user-comment .icon-user {
     font-size: 50px;
 }
-
 .respon-comment {
     top: 0;
     right: 0;
 }
-
 .post-comment {
     top: 0;
     left: 0;
 }
-
-
-
 .send-button {
     border: none;
     padding: 5px 0;
     border-radius: 4px;
     width: 68%;
 }
-
 .send-button:hover {
     color: white;
 }
 
-
 .left-side-bar {
     margin-bottom: 100px;
 }
-
 .move-to-top-button {
     position: fixed;
     width: 60px;
@@ -149,26 +133,21 @@ body {
     z-index: 99;
 }
 
-
-
 /* ---------------Left-side-bar --------------*/
 .left-side-bar {
     height: 500px;
     width: 100%;
     margin-top: 50px;
 }
-
 .first-box {
     width: 100%;
     height: 300px;
 }
-
 .first-box #header {
     background: blue;
     color: #fff;
     text-align: center;
 }
-
 .new-letter {
     background-color: red;
     color: #fff;
@@ -176,16 +155,12 @@ body {
     padding: 2px 5px;
     border-radius: 2px;
 }
-
 .text-content {
     color: #000;
 }
-
 .second-box {
     margin-top: 50px;
 }
-
-
 /*----------- Footer ----------*/
 .footer-content {
     display: flex;

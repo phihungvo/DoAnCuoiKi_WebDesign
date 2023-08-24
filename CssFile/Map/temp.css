@@ -79,28 +79,22 @@ body {
 .content-main {
     position: relative;
 }
-
 .container-fluid {
     padding: 0%;
 }
-
 .option-sidebar {
     display: flex;
     position: absolute;
     top: 30%;
     right: 10px;
 }
-
 .option-sidebar .left-content {
     display: grid;
     text-align: right;
-
 }
-
 .left-content h5 {
     padding-top: 15px;
 }
-
 .option-sidebar .right-icon {
     display: grid;
     background-color: rgba(87, 91, 96, 0.7);

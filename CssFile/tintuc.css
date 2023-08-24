@@ -138,8 +138,6 @@ body {
     margin: 10px 0 0 85px;
 }
 
-
-
 .another-blog {
     padding: 10px 0px 10px 20px;
     border-left: 3px solid red;
@@ -149,17 +147,12 @@ body {
     font-weight: 800;
     background-color: rgb(237, 237, 237);
 }
-
-
 .img-hover {
     transition: transform 0.44s;
 }
-
-
 .img-hover:hover {
     transform: scale(1.04);
 }
-
 .move-to-top-button {
     position: fixed;
     width: 60px;

@@ -239,9 +239,6 @@ body {
 .row-content {
     margin-top: 10px;
 }
-
-
-
 .content-tempature {
     display: flex;
     color: #91C8E4;
@@ -249,9 +246,6 @@ body {
     /* justify-content: center;
     align-items: center; */
 }
-
-
-
 
 .icon-temp {
     font-size: 60px;

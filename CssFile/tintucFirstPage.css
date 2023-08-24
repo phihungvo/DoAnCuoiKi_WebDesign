@@ -29,33 +29,26 @@ body {
 .navbar-brand {
     display: flex;
 }
-
 .text-main-color {
     margin: 3px 0 0 10px;
     color: #fff;
 }
-
 .text-main-color:hover {
     text-decoration: none;
     color: var(--hover-color);
 }
-
 .dropdown-menu {
     margin-top: 11px;
     background-color: var(--main-color);
     border: none;
 }
-
 .dropdown-menu a {
     color: white;
 }
-
-
 .img-item {
     height: 700px;
     object-fit: cover;
 }
-
 .navbar-containt {
     position: fixed;
     top: 0;
@@ -82,61 +75,47 @@ body {
 .img-hover:hover {
     transform: scale(1.04);
 }
-
-
 .hr-line {
     margin-top: -10px;
 }
-
 .centered-text {
     text-align: justify;
 }
-
 .centered-text p {
     display: inline-block;
     color: #3b3b3b;
 }
-
 .time-load {
     display: flex;
     margin-top: 20px;
     color: #61677A;
 }
-
 .time-load i {
     margin: 5px 5px 0 5px;
 }
-
 .text-title-head {
     font-weight: 600;
 }
-
 .text-title-head:hover {
     text-decoration: none;
 }
-
 .row-see-alot {
     display: flex;
 }
-
 .user-comment {
     display: flex;
 }
-
 .user-comment .icon-user {
     font-size: 50px;
 }
-
 .respon-comment {
     top: 0;
     right: 0;
 }
-
 .post-comment {
     top: 0;
     left: 0;
 }
-
 .send-button {
     border: none;
     padding: 5px 0;
@@ -147,16 +126,13 @@ body {
 .send-button:hover {
     color: white;
 }
-
 .text-title {
     color: #000;
     margin-left: 10px;
 }
-
 .time-load-second {
     margin: 10px 0 0 85px;
 }
-
 .move-to-top-button {
     position: fixed;
     width: 60px;
