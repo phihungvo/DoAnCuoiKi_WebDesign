@@ -106,8 +106,8 @@ var myLineChart = new Chart(lineCtx, {
 var lineData = {
   labels: ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'],
   datasets: [{
-    label: 'Lượng mưa (in)',
-    data: [600, 500, 1003.96, 800.65, 992.54, 1100, 1003.95],
+    label: 'Mức độ áp suất',
+    data: [1007.34, 1007.34, 1007, 1007.16, 1007.23, 1007.76, 1007.87],
     fill: true,
     backgroundColor: 'rgba(247, 163, 92, 0.6)',
     borderColor: 'rgb(247, 163, 92)',
