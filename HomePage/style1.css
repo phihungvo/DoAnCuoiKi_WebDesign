@@ -58,6 +58,12 @@ body {
 }
 
 
+@media (max-width: 768px){
+    .dropdown-menu{
+        margin-top: -10px;
+    }
+}
+
 .img-item {
     height: 700px;
     object-fit: cover;
