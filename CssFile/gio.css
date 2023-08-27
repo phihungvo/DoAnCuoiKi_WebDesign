@@ -48,6 +48,12 @@ body {
     color: white;
 }
 
+@media (max-width: 768px){
+    .dropdown-menu{
+        margin-top: -10px;
+    }
+}
+
 
 .img-item {
     height: 700px;
